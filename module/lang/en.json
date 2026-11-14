@@ -19,6 +19,15 @@
       "AutoApply": {
         "Name": "Apply battle forms on cast",
         "Hint": "When a battle-form spell or Untamed Form is cast, ask the caster which form to take and apply its effect. Turn this off to apply effects by hand from the chat card; they still get the form's token art."
+      },
+      "Transition": {
+        "Name": "Fade to the form's image",
+        "Hint": "Fade the token to its new image when you apply a battle form. Read when the form is applied, on the computer of whoever applies it."
+      },
+      "FormArt": {
+        "Name": "Form art",
+        "Label": "Manage form art",
+        "Hint": "See which image each battle form shows on the token and where it comes from, and set your own."
       }
     },
     "Picker": {
@@ -53,6 +62,19 @@
       "climb": "Climb Speed",
       "fly": "Fly Speed",
       "swim": "Swim Speed"
+    },
+    "Art": {
+      "Title": "Form art",
+      "Intro": "The image each form puts on the token. Images come from your art modules through Foundry's compendium art, or from the creature in the PF2e compendium. Set your own for any form; it is used the next time the form is applied.",
+      "Search": "Search forms or spells",
+      "Browse": "Choose an image",
+      "Reset": "Reset to the automatic image",
+      "Source": {
+        "override": "Your image",
+        "art-module": "Art module",
+        "compendium": "Compendium creature",
+        "none": "No image: the token keeps its own"
+      }
     }
   }
 }

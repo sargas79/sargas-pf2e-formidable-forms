@@ -33,4 +33,34 @@ export function registerSettings() {
     type: Boolean,
     default: DEFAULTS[SETTING.AUTO_APPLY],
   });
+  game.settings.register(MODULE_ID, SETTING.TRANSITION, {
+    name: `${I18N}.Settings.Transition.Name`,
+    hint: `${I18N}.Settings.Transition.Hint`,
+    scope: 'client',
+    config: true,
+    type: Boolean,
+    default: DEFAULTS[SETTING.TRANSITION],
+  });
+  // Edited through the Form Art manager, not the settings list.
+  game.settings.register(MODULE_ID, SETTING.OVERRIDES, {
+    scope: 'world',
+    config: false,
+    type: Object,
+    default: DEFAULTS[SETTING.OVERRIDES],
+  });
+}
+
+/**
+ * Registers the GM-only button that opens the Form Art manager.
+ * @param {typeof foundry.applications.api.ApplicationV2} application The manager's class
+ */
+export function registerArtMenu(application) {
+  game.settings.registerMenu(MODULE_ID, 'formArt', {
+    name: `${I18N}.Settings.FormArt.Name`,
+    label: `${I18N}.Settings.FormArt.Label`,
+    hint: `${I18N}.Settings.FormArt.Hint`,
+    icon: 'fa-solid fa-paw',
+    type: application,
+    restricted: true,
+  });
 }

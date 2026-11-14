@@ -16,11 +16,13 @@ function filesIn(folder, extension) {
     .map((name) => ({ name: `${folder}/${name}`, text: readFileSync(path.join(dir, name), 'utf8') }));
 }
 
-/** Keys written in full ("SARGAS_FORMS.A.B") or with the root constant (`${I18N}.A.B`). */
+/** Keys written in full ("SARGAS_FORMS.A.B"), with the root constant (`${I18N}.A.B`) or through `t('A.B')`. */
 function keysIn(text) {
   const keys = new Set();
   for (const [, key] of text.matchAll(/\$\{I18N\}\.([A-Za-z0-9.]+)/g)) keys.add(`${I18N}.${key}`);
   for (const [key] of text.matchAll(new RegExp(`${I18N}\\.[A-Za-z0-9.]+`, 'g'))) keys.add(key);
+  // The scripts' `t('A.B')` helper adds the root itself.
+  for (const [, key] of text.matchAll(/\bt\(\s*['"`]([A-Za-z0-9.]+)/g)) keys.add(`${I18N}.${key}`);
   // A key that ends with a dot is a prefix completed at runtime; those are checked by the tests of their feature.
   return [...keys].map((key) => key.replace(/\.$/, '')).filter((key) => key !== I18N);
 }

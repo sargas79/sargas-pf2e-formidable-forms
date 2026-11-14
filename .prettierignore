@@ -6,3 +6,4 @@ module/data/forms.json
 package-lock.json
 .claude/
 docs/PLAN.md
+module/templates/

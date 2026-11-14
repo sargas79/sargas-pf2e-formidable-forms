@@ -1,0 +1,129 @@
+/* Sargas PF2e Formidable Forms: the form picker and the Form Art manager. */
+
+.sargas-forms {
+  /* Never wider than the screen, so there is no horizontal scrolling on a phone. */
+  max-width: 100vw;
+}
+
+.sargas-forms .window-content {
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.sargas-forms-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 0;
+  max-height: min(75vh, 46rem);
+}
+
+.sargas-forms-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sargas-forms-header .sargas-forms-back {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.sargas-forms-prompt {
+  flex: 1 1 8rem;
+  margin: 0;
+  border: none;
+}
+
+.sargas-forms-rank {
+  flex: 0 0 auto;
+  opacity: 0.8;
+}
+
+.sargas-forms-header input[type='search'] {
+  flex: 1 1 100%;
+}
+
+.sargas-forms-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sargas-forms-group[hidden],
+.sargas-forms-card[hidden],
+.sargas-forms-empty[hidden] {
+  display: none;
+}
+
+.sargas-forms-group > h4 {
+  margin: 0.5rem 0 0.25rem;
+  border-bottom: 1px solid var(--color-border, currentColor);
+}
+
+.sargas-forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: 0.5rem;
+}
+
+.sargas-forms-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  padding: 0.35rem;
+  line-height: 1.2;
+  white-space: normal;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.sargas-forms-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
+  border: none;
+  border-radius: 4px;
+}
+
+.sargas-forms-card.selected {
+  border-color: var(--color-warm-2, #c9593f);
+  box-shadow: 0 0 6px var(--color-warm-2, #c9593f);
+}
+
+.sargas-forms-name {
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.sargas-forms-detail {
+  font-size: var(--font-size-12, 0.75rem);
+  opacity: 0.85;
+}
+
+.sargas-forms-detail i {
+  margin-left: 0.15rem;
+}
+
+.sargas-forms-empty {
+  margin: 1rem 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.sargas-forms-footer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sargas-forms-footer button {
+  flex: 1;
+}

@@ -37,6 +37,7 @@
     ]
   },
   "esmodules": ["scripts/main.mjs"],
+  "styles": ["styles/formidable-forms.css"],
   "languages": [
     {
       "lang": "en",

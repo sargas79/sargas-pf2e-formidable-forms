@@ -23,7 +23,36 @@
     },
     "Picker": {
       "Title": "Choose a form: {spell}",
+      "Rank": "Rank {rank}",
+      "Search": "Search forms",
+      "ChooseSpell": "Choose a kind of form",
+      "FormCount": "{count} forms",
+      "Back": "Back",
+      "NoMatch": "No form matches your search.",
+      "Cancel": "Cancel",
       "Apply": "Transform"
+    },
+    "Group": {
+      "arcane": "Arcane dragons",
+      "divine": "Divine dragons",
+      "occult": "Occult dragons",
+      "primal": "Primal dragons",
+      "legacy": "Legacy forms (before the remaster)"
+    },
+    "Size": {
+      "own": "Your size",
+      "tiny": "Tiny",
+      "sm": "Small",
+      "med": "Medium",
+      "lg": "Large",
+      "huge": "Huge",
+      "grg": "Gargantuan"
+    },
+    "Movement": {
+      "burrow": "Burrow Speed",
+      "climb": "Climb Speed",
+      "fly": "Fly Speed",
+      "swim": "Swim Speed"
     }
   }
 }

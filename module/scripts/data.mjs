@@ -1,21 +1,7 @@
-// Loads the form catalogue once, when the module script is imported. Foundry waits for module scripts (including
-// this top-level await) before it fires `init`, so the catalogue is ready for every hook.
+// The form catalogue (module/data/forms.json), imported as a JSON module. A static import is resolved while the
+// browser loads the module's scripts, before any of them runs, so the catalogue is there for every hook from `init`
+// on and nothing has to wait for it. If the file is missing or broken, the module fails to load with an error in
+// the console, instead of running without its data.
+import catalogue from '../data/forms.json' with { type: 'json' };
 
-const EMPTY = { system: 'pf2e', pf2e: {}, untamed: null, spells: {}, effects: {} };
-
-async function load() {
-  try {
-    const response = await fetch(new URL('../data/forms.json', import.meta.url));
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return await response.json();
-  } catch (error) {
-    console.error('sargas-pf2e-formidable-forms | Could not load the form catalogue', error);
-    return EMPTY;
-  }
-}
-
-/** The form catalogue (module/data/forms.json). */
-export const catalogue = await load();
-
-/** False when the catalogue failed to load; the module then does nothing. */
-export const hasCatalogue = catalogue.untamed !== null;
+export { catalogue };

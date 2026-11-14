@@ -1,0 +1,28 @@
+{
+  "name": "sargas-pf2e-formidable-forms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Foundry VTT v14 PF2e module: pick a battle form when the spell is cast, apply its effect and swap the token art.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks",
+    "build": "node scripts/build.mjs",
+    "package": "node scripts/package.mjs",
+    "check:art": "node scripts/check-no-art.mjs",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "archiver": "^8.0.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+scripts/.cache/
+scripts/data/pf2e-snapshot.json
+module/data/forms.json
+package-lock.json
+.claude/
+docs/PLAN.md

@@ -1,0 +1,47 @@
+{
+  "id": "sargas-pf2e-formidable-forms",
+  "title": "Sargas PF2e Formidable Forms",
+  "description": "Pick a battle form when the spell is cast. The module applies the spell effect, shows the chosen creature's art on the token and lets the form set the token size. Everything reverts when the effect ends. Ships no art.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Diego Vescovini"
+    }
+  ],
+  "url": "https://github.com/sargas79/sargas-pf2e-formidable-forms",
+  "manifest": "https://github.com/sargas79/sargas-pf2e-formidable-forms/releases/latest/download/module.json",
+  "download": "https://github.com/sargas79/sargas-pf2e-formidable-forms/releases/download/v0.1.0/sargas-pf2e-formidable-forms.zip",
+  "license": "MIT",
+  "readme": "https://github.com/sargas79/sargas-pf2e-formidable-forms/blob/main/README.md",
+  "bugs": "https://github.com/sargas79/sargas-pf2e-formidable-forms/issues",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "8.6.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "sargas-pf2-creature-images",
+        "type": "module",
+        "reason": "Provides creature art through Foundry's compendium art mapping. Any other art module that uses the mapping works too."
+      }
+    ]
+  },
+  "esmodules": ["scripts/main.mjs"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

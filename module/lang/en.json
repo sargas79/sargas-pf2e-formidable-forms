@@ -1,3 +1,14 @@
 {
-  "SARGAS_FORMS": {}
+  "SARGAS_FORMS": {
+    "Cosmetic": {
+      "Rat": "Rat",
+      "Cat": "Cat",
+      "Fox": "Fox",
+      "Frog": "Frog",
+      "Monkey": "Monkey",
+      "Snake": "Snake",
+      "Weasel": "Weasel",
+      "Raven": "Raven"
+    }
+  }
 }

@@ -1,0 +1,5128 @@
+{
+  "system": "pf2e",
+  "pf2e": {
+    "ref": "dd72f1a6f25f3f61990847bfb90b5b4d1c516e90",
+    "version": "8.7.0"
+  },
+  "untamed": {
+    "slug": "untamed-form",
+    "name": "Untamed Form",
+    "uuid": "Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X",
+    "rank": 1,
+    "effect": "Compendium.pf2e.spell-effects.Item.a5rWrWwuevTzs9Io",
+    "effectId": "a5rWrWwuevTzs9Io",
+    "effectName": "Spell Effect: Untamed Form",
+    "effectSlug": "spell-effect-untamed-form",
+    "img": "icons/creatures/amphibians/treefrog-leaf-green.webp",
+    "actorFlag": "flags.system.wildShapeForms",
+    "choiceSet": {
+      "flag": "formEffect",
+      "index": 0
+    },
+    "grant": {
+      "index": 1
+    },
+    "unlocks": [
+      "Compendium.pf2e.spell-effects.Item.1pC1qjvCuAKzjYo8",
+      "Compendium.pf2e.spell-effects.Item.Qp0dlhJaCzXIx73r",
+      "Compendium.pf2e.spell-effects.Item.0Cyf07wboRp4CmcQ",
+      "Compendium.pf2e.spell-effects.Item.KkDRRDuycXwKPa6n",
+      "Compendium.pf2e.spell-effects.Item.oJbcmpBSHwmx6FD4",
+      "Compendium.pf2e.spell-effects.Item.T6XnxvsgvvOrpien",
+      "Compendium.pf2e.spell-effects.Item.iOKhr2El8R6cz6YI",
+      "Compendium.pf2e.spell-effects.Item.542Keo6txtq7uvqe",
+      "Compendium.pf2e.spell-effects.Item.bzpW0owbAV3UX7UA",
+      "Compendium.pf2e.spell-effects.Item.dQeERSuUeHv9Rib5",
+      "Compendium.pf2e.spell-effects.Item.oMtbVNQ5YFmmQUlU",
+      "Compendium.pf2e.spell-effects.Item.tu8FyCtmL3YYR2jL",
+      "Compendium.pf2e.spell-effects.Item.mvMWmP3m9Xawbwpx",
+      "Compendium.pf2e.spell-effects.Item.iRomn5U1Fq72AI4w",
+      "Compendium.pf2e.spell-effects.Item.ydsLEGjY89Akc4oZ"
+    ]
+  },
+  "spells": {
+    "aberrant-form": {
+      "slug": "aberrant-form",
+      "name": "Aberrant Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.Fu8Ml47ZfXpSYe7E",
+      "rank": 5,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.OH3sdHE6xWwOjq9v"
+      ]
+    },
+    "aerial-form": {
+      "slug": "aerial-form",
+      "name": "Aerial Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK",
+      "rank": 4,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.mvMWmP3m9Xawbwpx"
+      ]
+    },
+    "angel-form": {
+      "slug": "angel-form",
+      "name": "Angel Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.E3zIZ4pjlOuWeGRz",
+      "rank": 7,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.Fi66csT9OiBGmPZ0",
+        "Compendium.pf2e.spell-effects.Item.3vWfew0TIrcGRjLZ",
+        "Compendium.pf2e.spell-effects.Item.Bd86oAvK3RLN076H"
+      ]
+    },
+    "animal-form": {
+      "slug": "animal-form",
+      "name": "Animal Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp",
+      "rank": 2,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.iRomn5U1Fq72AI4w"
+      ]
+    },
+    "cosmic-form": {
+      "slug": "cosmic-form",
+      "name": "Cosmic Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.IHUs4qn27RrdFQ5Y",
+      "rank": 7,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.tfdDpf9xSWgQer5g"
+      ]
+    },
+    "daemon-form": {
+      "slug": "daemon-form",
+      "name": "Daemon Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.aSDfGcUOUVGU5m1g",
+      "rank": 6,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.IKdTcUwGtnkvrCed",
+        "Compendium.pf2e.spell-effects.Item.1n84AqLtsdT8I64W",
+        "Compendium.pf2e.spell-effects.Item.0W87OkYi3qCwNGSj"
+      ]
+    },
+    "demon-form": {
+      "slug": "demon-form",
+      "name": "Demon Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.dKbv80rlAWVpz83C",
+      "rank": 6,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.Ptnncwp118gIvmvG",
+        "Compendium.pf2e.spell-effects.Item.X1kkbRrh4zJuDGjl",
+        "Compendium.pf2e.spell-effects.Item.sXe7cPazOJbX41GU",
+        "Compendium.pf2e.spell-effects.Item.hnfQyf05IIa7WPBB",
+        "Compendium.pf2e.spell-effects.Item.20egTKICPMhibqgn"
+      ]
+    },
+    "devil-form": {
+      "slug": "devil-form",
+      "name": "Devil Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.dR53f0p15EW7D0xC",
+      "rank": 6,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.83md7JyfA5WnWaOZ",
+        "Compendium.pf2e.spell-effects.Item.0yy4t4UY1HqrEo70",
+        "Compendium.pf2e.spell-effects.Item.BDMEqBsumguTrMXa",
+        "Compendium.pf2e.spell-effects.Item.HEbbxKtBzsLhFead"
+      ]
+    },
+    "devouring-dark-form": {
+      "slug": "devouring-dark-form",
+      "name": "Devouring Dark Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.wTldMJx0vyBAehrI",
+      "rank": 1,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.Le5Sewk43o7V60nO"
+      ]
+    },
+    "dinosaur-form": {
+      "slug": "dinosaur-form",
+      "name": "Dinosaur Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.KhM8MhoUgoUjBMIz",
+      "rank": 4,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.0Cyf07wboRp4CmcQ",
+        "Compendium.pf2e.spell-effects.Item.KkDRRDuycXwKPa6n",
+        "Compendium.pf2e.spell-effects.Item.oJbcmpBSHwmx6FD4",
+        "Compendium.pf2e.spell-effects.Item.T6XnxvsgvvOrpien",
+        "Compendium.pf2e.spell-effects.Item.iOKhr2El8R6cz6YI",
+        "Compendium.pf2e.spell-effects.Item.542Keo6txtq7uvqe"
+      ]
+    },
+    "dragon-form": {
+      "slug": "dragon-form",
+      "name": "Dragon Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.5c692cCcTDXjSEzk",
+      "rank": 6,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.1pC1qjvCuAKzjYo8"
+      ]
+    },
+    "element-embodied": {
+      "slug": "element-embodied",
+      "name": "Element Embodied",
+      "uuid": "Compendium.pf2e.spells-srd.Item.vQMAdnIwnV9prPiG",
+      "rank": 10,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.J60rN48XzBGHmR6m",
+        "Compendium.pf2e.spell-effects.Item.jp88SCE3VCRAyE6x",
+        "Compendium.pf2e.spell-effects.Item.lmAwCy7isFvLYdGd",
+        "Compendium.pf2e.spell-effects.Item.lRfiYmsoQMJZ81NQ",
+        "Compendium.pf2e.spell-effects.Item.w1HwO7huxJoK0gHY",
+        "Compendium.pf2e.spell-effects.Item.xPNKt1aQc3dquKlt"
+      ]
+    },
+    "elemental-form": {
+      "slug": "elemental-form",
+      "name": "Elemental Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs",
+      "rank": 5,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.Qp0dlhJaCzXIx73r"
+      ]
+    },
+    "elephant-form": {
+      "slug": "elephant-form",
+      "name": "Elephant Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.zjYQyuBNT5VjV4mz",
+      "rank": 4,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.IWD5RehCxZVfgrX9"
+      ]
+    },
+    "fey-form": {
+      "slug": "fey-form",
+      "name": "Fey Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.Qu4IThrk1wpONwjT",
+      "rank": 4,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.jeH78c7kyk376PKS"
+      ]
+    },
+    "insect-form": {
+      "slug": "insect-form",
+      "name": "Insect Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.XI6Lzd2B5pernkPd",
+      "rank": 3,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.dQeERSuUeHv9Rib5"
+      ]
+    },
+    "monstrosity-form": {
+      "slug": "monstrosity-form",
+      "name": "Monstrosity Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.8AMvNVOUEtxBCDvJ",
+      "rank": 8,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.oMtbVNQ5YFmmQUlU",
+        "Compendium.pf2e.spell-effects.Item.bzpW0owbAV3UX7UA"
+      ]
+    },
+    "nature-incarnate": {
+      "slug": "nature-incarnate",
+      "name": "Nature Incarnate",
+      "uuid": "Compendium.pf2e.spells-srd.Item.ZXwxs5tRjEGrjAJT",
+      "rank": 10,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.hfcFc8cV5wF2evWP"
+      ]
+    },
+    "ooze-form": {
+      "slug": "ooze-form",
+      "name": "Ooze Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.0gdZrT9lwO17EIxc",
+      "rank": 3,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.ciQhlQbQcarzRYzf"
+      ]
+    },
+    "pest-form": {
+      "slug": "pest-form",
+      "name": "Pest Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl",
+      "rank": 1,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.ydsLEGjY89Akc4oZ"
+      ]
+    },
+    "plant-form": {
+      "slug": "plant-form",
+      "name": "Plant Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.zCcfPS4y5SrZzU2x",
+      "rank": 5,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.tu8FyCtmL3YYR2jL"
+      ]
+    },
+    "primal-herd": {
+      "slug": "primal-herd",
+      "name": "Primal Herd",
+      "uuid": "Compendium.pf2e.spells-srd.Item.pmP8HhXvvEKP3LqU",
+      "rank": 10,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.gOeu0lPtKQcLh1Xz"
+      ]
+    },
+    "sacred-form": {
+      "slug": "sacred-form",
+      "name": "Sacred Form",
+      "uuid": "Compendium.pf2e.spells-srd.Item.MMCQsh12TPaDdPbV",
+      "rank": 6,
+      "effects": [
+        "Compendium.pf2e.spell-effects.Item.W4lb3417rNDd9tCq"
+      ]
+    }
+  },
+  "effects": {
+    "Compendium.pf2e.spell-effects.Item.OH3sdHE6xWwOjq9v": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.OH3sdHE6xWwOjq9v",
+      "id": "OH3sdHE6xWwOjq9v",
+      "name": "Spell Effect: Aberrant Form",
+      "slug": "spell-effect-aberrant-form",
+      "spell": "aberrant-form",
+      "img": "systems/pf2e/icons/spells/aberrant-form.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectAberrantForm",
+        "index": 0,
+        "rollOption": "aberrant-form"
+      },
+      "forms": [
+        {
+          "key": "aberrant-form:chuul",
+          "name": "Chuul",
+          "label": "PF2E.BattleForm.AberrantForm.ChoiceSet.Chuul",
+          "value": "chuul",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.aD76W2uEQhFFUrom",
+          "creatureName": "Chuul",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "aberrant-form:gogiteth",
+          "name": "Gogiteth",
+          "label": "PF2E.BattleForm.AberrantForm.ChoiceSet.Gogiteth",
+          "value": "gogiteth",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.Iwk2qT4lVyrvoz3B",
+          "creatureName": "Gogiteth",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "aberrant-form:gug",
+          "name": "Gug",
+          "label": "PF2E.BattleForm.AberrantForm.ChoiceSet.Gug",
+          "value": "gug",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.QLyDRZPvMsYGZEeN",
+          "creatureName": "Gug",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "aberrant-form:ofalth",
+          "name": "Ofalth",
+          "label": "PF2E.BattleForm.AberrantForm.ChoiceSet.Ofalth",
+          "value": "ofalth",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.2jtRdYo9ey7osDUH",
+          "creatureName": "Ofalth",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.mvMWmP3m9Xawbwpx": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.mvMWmP3m9Xawbwpx",
+      "id": "mvMWmP3m9Xawbwpx",
+      "name": "Spell Effect: Aerial Form",
+      "slug": "spell-effect-aerial-form",
+      "spell": "aerial-form",
+      "img": "icons/creatures/birds/corvid-call-sound-glowing.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectAerialForm",
+        "index": 0,
+        "rollOption": "aerial-form"
+      },
+      "forms": [
+        {
+          "key": "aerial-form:bat",
+          "name": "Bat",
+          "label": "PF2E.BattleForm.AerialForm.ChoiceSet.Bat",
+          "value": "bat",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.xnpuGO8jEMba9wy5",
+          "creatureName": "Giant Bat",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "med"
+            },
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "aerial-form:bird",
+          "name": "Bird",
+          "label": "PF2E.BattleForm.AerialForm.ChoiceSet.Bird",
+          "value": "bird",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.XEjkJ8fQqLc02hrU",
+          "creatureName": "Giant Eagle",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "med"
+            },
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "aerial-form:pterosaur",
+          "name": "Pterosaur",
+          "label": "PF2E.BattleForm.AerialForm.ChoiceSet.Pterosaur",
+          "value": "pterosaur",
+          "predicate": [
+            {
+              "or": [
+                {
+                  "not": "self:effect:untamed-form"
+                },
+                "feat:ferocious-shape"
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.bGp2t0UteEYu3BGe",
+          "creatureName": "Pteranodon",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "med"
+            },
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "aerial-form:wasp",
+          "name": "Wasp",
+          "label": "PF2E.BattleForm.AerialForm.ChoiceSet.Wasp",
+          "value": "wasp",
+          "predicate": [
+            {
+              "or": [
+                {
+                  "not": "self:effect:untamed-form"
+                },
+                "feat:insect-shape"
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.6aaBmiOgqZ5h2IhW",
+          "creatureName": "Giant Wasp",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "med"
+            },
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.Fi66csT9OiBGmPZ0": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.Fi66csT9OiBGmPZ0",
+      "id": "Fi66csT9OiBGmPZ0",
+      "name": "Spell Effect: Angel Form",
+      "slug": "spell-effect-angel-form",
+      "spell": "angel-form",
+      "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectAngelForm",
+        "index": 0,
+        "rollOption": "angel-form"
+      },
+      "forms": [
+        {
+          "key": "angel-form:balisse",
+          "name": "Balisse",
+          "label": "PF2E.BattleForm.AngelForm.ChoiceSet.Balisse",
+          "value": "balisse",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.Q1wybC7rSc4MIF9g",
+          "creatureName": "Balisse",
+          "sizes": [
+            {
+              "rank": 7,
+              "size": "med"
+            },
+            {
+              "rank": 9,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "angel-form:choral",
+          "name": "Choral",
+          "label": "PF2E.BattleForm.AngelForm.ChoiceSet.Choral",
+          "value": "choral",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.9SNpsnwlzZjH4DQf",
+          "creatureName": "Choral",
+          "sizes": [
+            {
+              "rank": 7,
+              "size": "sm"
+            },
+            {
+              "rank": 9,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "angel-form:kuribu",
+          "name": "Kuribu",
+          "label": "PF2E.BattleForm.AngelForm.ChoiceSet.Kuribu",
+          "value": "kuribu",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.tbdfg5ayaoHcBYCV",
+          "creatureName": "Kuribu",
+          "sizes": [
+            {
+              "rank": 7,
+              "size": "sm"
+            },
+            {
+              "rank": 9,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "angel-form:tennin",
+          "name": "Tennin",
+          "label": "PF2E.BattleForm.AngelForm.ChoiceSet.Tennin",
+          "value": "tennin",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.lnaGhOB5LdNb7xB1",
+          "creatureName": "Tennin",
+          "sizes": [
+            {
+              "rank": 7,
+              "size": "med"
+            },
+            {
+              "rank": 9,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.3vWfew0TIrcGRjLZ": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.3vWfew0TIrcGRjLZ",
+      "id": "3vWfew0TIrcGRjLZ",
+      "name": "Spell Effect: Angel Form (Monadic Deva)",
+      "slug": "spell-effect-angel-form-monadic-deva",
+      "spell": "angel-form",
+      "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "angel-form:monadic-deva",
+          "name": "Monadic Deva",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.EXeR2HC4xsvHcf6K",
+          "creatureName": "Monadic Deva",
+          "sizes": [
+            {
+              "rank": 7,
+              "size": "med"
+            },
+            {
+              "rank": 9,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.Bd86oAvK3RLN076H": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.Bd86oAvK3RLN076H",
+      "id": "Bd86oAvK3RLN076H",
+      "name": "Spell Effect: Angel Form (Movanic Deva)",
+      "slug": "spell-effect-angel-form-movanic-deva",
+      "spell": "angel-form",
+      "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "angel-form:movanic-deva",
+          "name": "Movanic Deva",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.nSDXAfFOF2gEKmkM",
+          "creatureName": "Movanic Deva",
+          "sizes": [
+            {
+              "rank": 7,
+              "size": "med"
+            },
+            {
+              "rank": 9,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.iRomn5U1Fq72AI4w": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.iRomn5U1Fq72AI4w",
+      "id": "iRomn5U1Fq72AI4w",
+      "name": "Spell Effect: Animal Form",
+      "slug": "spell-effect-animal-form",
+      "spell": "animal-form",
+      "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectAnimalForm",
+        "index": 0,
+        "rollOption": "animal-form"
+      },
+      "forms": [
+        {
+          "key": "animal-form:ape",
+          "name": "Ape",
+          "label": "PF2E.SpecificRule.AnimalForm.Ape",
+          "value": "ape",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.PlkRv9NMKq9TShYf",
+          "creatureName": "Gorilla",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:bear",
+          "name": "Bear",
+          "label": "PF2E.SpecificRule.AnimalForm.Bear",
+          "value": "bear",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.6K4RWus85o8iqy0t",
+          "creatureName": "Grizzly Bear",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "animal-form:bull",
+          "name": "Bull",
+          "label": "PF2E.SpecificRule.AnimalForm.Bull",
+          "value": "bull",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.triumph-of-the-tusk-bestiary.Actor.y7LCTsOl0bTKl33q",
+          "creatureName": "Aurochs",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "animal-form:canine",
+          "name": "Canine",
+          "label": "PF2E.SpecificRule.AnimalForm.Canine",
+          "value": "canine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.BN5Lb6IsQ9Wyu3rL",
+          "creatureName": "Wolf",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "animal-form:cat",
+          "name": "Cat",
+          "label": "PF2E.SpecificRule.AnimalForm.Cat",
+          "value": "cat",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.JGwKk83oX4gTGlqe",
+          "creatureName": "Tiger",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "animal-form:crab",
+          "name": "Crab",
+          "label": "PF2E.SpecificRule.AnimalForm.Crab",
+          "value": "crab",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.Lb11NsmTJpd4YS1p",
+          "creatureName": "Giant Crab",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:crocodile",
+          "name": "Crocodile",
+          "label": "PF2E.SpecificRule.AnimalForm.Crocodile",
+          "value": "crocodile",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.2rMLYkUR47ZCQMUg",
+          "creatureName": "Crocodile",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:deer",
+          "name": "Deer",
+          "label": "PF2E.SpecificRule.AnimalForm.Deer",
+          "value": "deer",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.1wVVI0Jj7MdZ3uHg",
+          "creatureName": "Moose",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "animal-form:frog",
+          "name": "Frog",
+          "label": "PF2E.SpecificRule.AnimalForm.Frog",
+          "value": "frog",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.jiLbjz3kic9Uv5b6",
+          "creatureName": "Giant Frog",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:orca",
+          "name": "Orca",
+          "label": "PF2E.SpecificRule.AnimalForm.Orca",
+          "value": "orca",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.uco1YijAEotYjdnF",
+          "creatureName": "Orca",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:seal",
+          "name": "Seal",
+          "label": "PF2E.SpecificRule.AnimalForm.Seal",
+          "value": "seal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.howl-of-the-wild-bestiary.Actor.IjI9p8ZpS7LVBKJC",
+          "creatureName": "Leopard Seal",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:shark",
+          "name": "Shark",
+          "label": "PF2E.SpecificRule.AnimalForm.Shark",
+          "value": "shark",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.uNNOQFvuMq8ZsQkn",
+          "creatureName": "Great White Shark",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "animal-form:snake",
+          "name": "Snake",
+          "label": "PF2E.SpecificRule.AnimalForm.Snake",
+          "value": "snake",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.AJ5LuNMVPLCydryP",
+          "creatureName": "Giant Viper",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb",
+                "swim"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.tfdDpf9xSWgQer5g": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.tfdDpf9xSWgQer5g",
+      "id": "tfdDpf9xSWgQer5g",
+      "name": "Spell Effect: Cosmic Form",
+      "slug": "spell-effect-cosmic-form",
+      "spell": "cosmic-form",
+      "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectCosmicForm",
+        "index": 0,
+        "rollOption": "cosmic-form"
+      },
+      "forms": [
+        {
+          "key": "cosmic-form:moon",
+          "name": "Moon",
+          "label": "PF2E.BattleForm.CosmicForm.Moon",
+          "value": "moon",
+          "battleForm": true,
+          "creature": null,
+          "creatureName": null,
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "cosmic-form:sun",
+          "name": "Sun",
+          "label": "PF2E.BattleForm.CosmicForm.Sun",
+          "value": "sun",
+          "battleForm": true,
+          "creature": null,
+          "creatureName": null,
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.IKdTcUwGtnkvrCed": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.IKdTcUwGtnkvrCed",
+      "id": "IKdTcUwGtnkvrCed",
+      "name": "Spell Effect: Daemon Form",
+      "slug": "spell-effect-daemon-form",
+      "spell": "daemon-form",
+      "img": "icons/creatures/magical/spirit-undead-ghost-tan-teal.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectDaemonForm",
+        "index": 0,
+        "rollOption": "daemon-form"
+      },
+      "forms": [
+        {
+          "key": "daemon-form:lacridaemon",
+          "name": "Lacridaemon",
+          "label": "PF2E.BattleForm.DaemonForm.ChoiceSet.Lacridaemon",
+          "value": "lacridaemon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.dGKDg0Wp5jSrZx8r",
+          "creatureName": "Lacridaemon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "daemon-form:leukodaemon",
+          "name": "Leukodaemon",
+          "label": "PF2E.BattleForm.DaemonForm.ChoiceSet.Leukodaemon",
+          "value": "leukodaemon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.bb5Z4z4EHb5LbCLK",
+          "creatureName": "Leukodaemon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "daemon-form:meladaemon",
+          "name": "Meladaemon",
+          "label": "PF2E.BattleForm.DaemonForm.ChoiceSet.Meladaemon",
+          "value": "meladaemon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.faZ3sXbvs51DFvrM",
+          "creatureName": "Meladaemon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "daemon-form:venedaemon",
+          "name": "Venedaemon",
+          "label": "PF2E.BattleForm.DaemonForm.ChoiceSet.Venedaemon",
+          "value": "venedaemon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.byShcvERXQVHNaoL",
+          "creatureName": "Venedaemon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.1n84AqLtsdT8I64W": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.1n84AqLtsdT8I64W",
+      "id": "1n84AqLtsdT8I64W",
+      "name": "Spell Effect: Daemon Form (Ceustodaemon)",
+      "slug": "spell-effect-daemon-form-ceustodaemon",
+      "spell": "daemon-form",
+      "img": "icons/creatures/magical/spirit-undead-ghost-tan-teal.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "daemon-form:ceustodaemon",
+          "name": "Ceustodaemon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.NW1Ax1QGE9W4DmiN",
+          "creatureName": "Ceustodaemon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.0W87OkYi3qCwNGSj": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.0W87OkYi3qCwNGSj",
+      "id": "0W87OkYi3qCwNGSj",
+      "name": "Spell Effect: Daemon Form (Piscodaemon)",
+      "slug": "spell-effect-daemon-form-piscodaemon",
+      "spell": "daemon-form",
+      "img": "icons/creatures/magical/spirit-undead-ghost-tan-teal.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "daemon-form:piscodaemon",
+          "name": "Piscodaemon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.nxR3nseHT01YmOQo",
+          "creatureName": "Piscodaemon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.Ptnncwp118gIvmvG": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.Ptnncwp118gIvmvG",
+      "id": "Ptnncwp118gIvmvG",
+      "name": "Spell Effect: Demon Form",
+      "slug": "spell-effect-demon-form",
+      "spell": "demon-form",
+      "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectDemonForm",
+        "index": 0,
+        "rollOption": "demon-form"
+      },
+      "forms": [
+        {
+          "key": "demon-form:abrikandilu",
+          "name": "Abrikandilu",
+          "label": "PF2E.BattleForm.DemonForm.ChoiceSet.Abrikandilu",
+          "value": "abrikandilu",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.zfy0YOxEAMaeHAWI",
+          "creatureName": "Abrikandilu",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "demon-form:brimorak",
+          "name": "Brimorak",
+          "label": "PF2E.BattleForm.DemonForm.ChoiceSet.Brimorak",
+          "value": "brimorak",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.6UrgCT8MwC8CeGbu",
+          "creatureName": "Brimorak",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "demon-form:kithangian",
+          "name": "Kithangian",
+          "label": "PF2E.BattleForm.DemonForm.ChoiceSet.Kithangian",
+          "value": "kithangian",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.c21HwKyf4IKgMfcv",
+          "creatureName": "Kithangian",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "demon-form:vloriak",
+          "name": "Vloriak",
+          "label": "PF2E.BattleForm.DemonForm.ChoiceSet.Vloriak",
+          "value": "vloriak",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.YTG7w3V77ZfrjRIC",
+          "creatureName": "Vloriak",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.X1kkbRrh4zJuDGjl": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.X1kkbRrh4zJuDGjl",
+      "id": "X1kkbRrh4zJuDGjl",
+      "name": "Spell Effect: Demon Form (Babau)",
+      "slug": "spell-effect-demon-form-babau",
+      "spell": "demon-form",
+      "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "demon-form:babau",
+          "name": "Babau",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.Ud6Iy1GolgtwrKQK",
+          "creatureName": "Babau",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.sXe7cPazOJbX41GU": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.sXe7cPazOJbX41GU",
+      "id": "sXe7cPazOJbX41GU",
+      "name": "Spell Effect: Demon Form (Hezrou)",
+      "slug": "spell-effect-demon-form-hezrou",
+      "spell": "demon-form",
+      "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "demon-form:hezrou",
+          "name": "Hezrou",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.wqiFcGPARy8zmQfd",
+          "creatureName": "Hezrou",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.hnfQyf05IIa7WPBB": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.hnfQyf05IIa7WPBB",
+      "id": "hnfQyf05IIa7WPBB",
+      "name": "Spell Effect: Demon Form (Nabasu)",
+      "slug": "spell-effect-demon-form-nabasu",
+      "spell": "demon-form",
+      "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "demon-form:nabasu",
+          "name": "Nabasu",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.jQ7zBVDCEhuMOOTl",
+          "creatureName": "Nabasu",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.20egTKICPMhibqgn": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.20egTKICPMhibqgn",
+      "id": "20egTKICPMhibqgn",
+      "name": "Spell Effect: Demon Form (Vrock)",
+      "slug": "spell-effect-demon-form-vrock",
+      "spell": "demon-form",
+      "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "demon-form:vrock",
+          "name": "Vrock",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.4cPw8hZwW6uvyzvh",
+          "creatureName": "Vrock",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.83md7JyfA5WnWaOZ": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.83md7JyfA5WnWaOZ",
+      "id": "83md7JyfA5WnWaOZ",
+      "name": "Spell Effect: Devil Form",
+      "slug": "spell-effect-devil-form",
+      "spell": "devil-form",
+      "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectDevilForm",
+        "index": 0,
+        "rollOption": "devil-form"
+      },
+      "forms": [
+        {
+          "key": "devil-form:coarti",
+          "name": "Coarti",
+          "label": "PF2E.BattleForm.DevilForm.ChoiceSet.Coarti",
+          "value": "coarti",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.VbN33np2jBfaxhAz",
+          "creatureName": "Coarti",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "devil-form:levaloch",
+          "name": "Levaloch",
+          "label": "PF2E.BattleForm.DevilForm.ChoiceSet.Levaloch",
+          "value": "levaloch",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.g2UXJD84mrssh4tc",
+          "creatureName": "Levaloch",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "devil-form:sarglagon",
+          "name": "Sarglagon",
+          "label": "PF2E.BattleForm.DevilForm.ChoiceSet.Sarglagon",
+          "value": "sarglagon",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.UMlGhyoHMvhVW6kv",
+          "creatureName": "Sarglagon",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "devil-form:vordine",
+          "name": "Vordine",
+          "label": "PF2E.BattleForm.DevilForm.ChoiceSet.Vordine",
+          "value": "vordine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.qvagIV8gqF0g3m3l",
+          "creatureName": "Vordine",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.0yy4t4UY1HqrEo70": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.0yy4t4UY1HqrEo70",
+      "id": "0yy4t4UY1HqrEo70",
+      "name": "Spell Effect: Devil Form (Barbazu)",
+      "slug": "spell-effect-devil-form-barbazu",
+      "spell": "devil-form",
+      "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "devil-form:barbazu",
+          "name": "Barbazu",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.FIoRPHaHdYUPVKdT",
+          "creatureName": "Barbazu",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.BDMEqBsumguTrMXa": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.BDMEqBsumguTrMXa",
+      "id": "BDMEqBsumguTrMXa",
+      "name": "Spell Effect: Devil Form (Erinys)",
+      "slug": "spell-effect-devil-form-erinys",
+      "spell": "devil-form",
+      "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "devil-form:erinys",
+          "name": "Erinys",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.KrxJlsL2iG1cuaYq",
+          "creatureName": "Erinys",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.HEbbxKtBzsLhFead": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.HEbbxKtBzsLhFead",
+      "id": "HEbbxKtBzsLhFead",
+      "name": "Spell Effect: Devil Form (Osyluth)",
+      "slug": "spell-effect-devil-form-osyluth",
+      "spell": "devil-form",
+      "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "devil-form:osyluth",
+          "name": "Osyluth",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.xjV0TmPNfKR7UcKu",
+          "creatureName": "Osyluth",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.Le5Sewk43o7V60nO": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.Le5Sewk43o7V60nO",
+      "id": "Le5Sewk43o7V60nO",
+      "name": "Spell Effect: Devouring Dark Form",
+      "slug": "spell-effect-devouring-dark-form",
+      "spell": "devouring-dark-form",
+      "img": "icons/magic/nature/root-vine-thorned-fire-purple.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectDevouringDarkForm",
+        "index": 0,
+        "rollOption": "devouring-dark-form"
+      },
+      "forms": [
+        {
+          "key": "devouring-dark-form:tentacle",
+          "name": "Tentacle",
+          "label": "PF2E.BattleForm.Attack.Tentacle",
+          "value": "tentacle",
+          "battleForm": false,
+          "creature": null,
+          "creatureName": null,
+          "sizes": [],
+          "movement": []
+        },
+        {
+          "key": "devouring-dark-form:shark",
+          "name": "Shark",
+          "label": "PF2E.NPCAbility.ChangeShape.Form.Animal.Specific.Shark",
+          "value": "shark",
+          "minRank": 2,
+          "predicate": [
+            {
+              "gte": [
+                "parent:level",
+                2
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.uNNOQFvuMq8ZsQkn",
+          "creatureName": "Great White Shark",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "devouring-dark-form:water-elemental",
+          "name": "Water Elemental",
+          "label": "PF2E.NPCAbility.ChangeShape.Form.Elemental.Water.Elemental",
+          "value": "water-elemental",
+          "minRank": 5,
+          "predicate": [
+            {
+              "gte": [
+                "parent:level",
+                5
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.1AZoRkLec47xrTqY",
+          "creatureName": "Living Waterfall",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "devouring-dark-form:cave-worm",
+          "name": "Cave Worm",
+          "label": "PF2E.NPCAbility.ChangeShape.Form.Animal.Specific.WormCave",
+          "value": "cave-worm",
+          "minRank": 8,
+          "predicate": [
+            "feat:monstrous-inclinations",
+            "feature:lurker-in-devouring-dark",
+            {
+              "gte": [
+                "parent:level",
+                8
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.vijBriZmbUJjbJNH",
+          "creatureName": "Cave Worm",
+          "sizes": [
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "devouring-dark-form:sea-serpent",
+          "name": "Sea Serpent",
+          "label": "PF2E.NPCAbility.ChangeShape.Form.SeaSerpent",
+          "value": "sea-serpent",
+          "minRank": 8,
+          "predicate": [
+            "feat:monstrous-inclinations",
+            "feature:lurker-in-devouring-dark",
+            {
+              "gte": [
+                "parent:level",
+                8
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.PUPnGG406PanzIvL",
+          "creatureName": "Sea Serpent",
+          "sizes": [
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.0Cyf07wboRp4CmcQ": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.0Cyf07wboRp4CmcQ",
+      "id": "0Cyf07wboRp4CmcQ",
+      "name": "Spell Effect: Dinosaur Form (Ankylosaurus)",
+      "slug": "spell-effect-dinosaur-form-ankylosaurus",
+      "spell": "dinosaur-form",
+      "img": "systems/pf2e/icons/spells/dinosaur-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "dinosaur-form:ankylosaurus",
+          "name": "Ankylosaurus",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.CYt04IKRQeiC9Ly9",
+          "creatureName": "Ankylosaurus",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.KkDRRDuycXwKPa6n": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.KkDRRDuycXwKPa6n",
+      "id": "KkDRRDuycXwKPa6n",
+      "name": "Spell Effect: Dinosaur Form (Brontosaurus)",
+      "slug": "spell-effect-dinosaur-form-brontosaurus",
+      "spell": "dinosaur-form",
+      "img": "systems/pf2e/icons/spells/dinosaur-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "dinosaur-form:brontosaurus",
+          "name": "Brontosaurus",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.wy8Ve0m3wbHMo1U1",
+          "creatureName": "Brontosaurus",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.oJbcmpBSHwmx6FD4": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.oJbcmpBSHwmx6FD4",
+      "id": "oJbcmpBSHwmx6FD4",
+      "name": "Spell Effect: Dinosaur Form (Deinonychus)",
+      "slug": "spell-effect-dinosaur-form-deinonychus",
+      "spell": "dinosaur-form",
+      "img": "systems/pf2e/icons/spells/dinosaur-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "dinosaur-form:deinonychus",
+          "name": "Deinonychus",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.wNkS1ArFjS6ZsrPS",
+          "creatureName": "Deinonychus",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.T6XnxvsgvvOrpien": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.T6XnxvsgvvOrpien",
+      "id": "T6XnxvsgvvOrpien",
+      "name": "Spell Effect: Dinosaur Form (Stegosaurus)",
+      "slug": "spell-effect-dinosaur-form-stegosaurus",
+      "spell": "dinosaur-form",
+      "img": "systems/pf2e/icons/spells/dinosaur-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "dinosaur-form:stegosaurus",
+          "name": "Stegosaurus",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.qtJ36jlcRQw5sBnr",
+          "creatureName": "Stegosaurus",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.iOKhr2El8R6cz6YI": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.iOKhr2El8R6cz6YI",
+      "id": "iOKhr2El8R6cz6YI",
+      "name": "Spell Effect: Dinosaur Form (Triceratops)",
+      "slug": "spell-effect-dinosaur-form-triceratops",
+      "spell": "dinosaur-form",
+      "img": "systems/pf2e/icons/spells/dinosaur-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "dinosaur-form:triceratops",
+          "name": "Triceratops",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.zAxKR8XWtQm2rqh4",
+          "creatureName": "Triceratops",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.542Keo6txtq7uvqe": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.542Keo6txtq7uvqe",
+      "id": "542Keo6txtq7uvqe",
+      "name": "Spell Effect: Dinosaur Form (Tyrannosaurus)",
+      "slug": "spell-effect-dinosaur-form-tyrannosaurus",
+      "spell": "dinosaur-form",
+      "img": "systems/pf2e/icons/spells/dinosaur-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "dinosaur-form:tyrannosaurus",
+          "name": "Tyrannosaurus",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.tpNP1UooPPHMyZye",
+          "creatureName": "Tyrannosaurus",
+          "sizes": [
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.1pC1qjvCuAKzjYo8": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.1pC1qjvCuAKzjYo8",
+      "id": "1pC1qjvCuAKzjYo8",
+      "name": "Spell Effect: Dragon Form",
+      "slug": "spell-effect-dragon-form",
+      "spell": "dragon-form",
+      "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "dragonForm",
+        "index": 0,
+        "objectKey": "dragonType"
+      },
+      "forms": [
+        {
+          "key": "dragon-form:adamantine",
+          "name": "Adamantine Dragon",
+          "label": "PF2E.Dragon.Adamantine",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "bludgeoning",
+            "dragonType": "adamantine",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": 20,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.hybmXlTxljL9L1dW",
+          "creatureName": "Adamantine Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow",
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:barrage",
+          "name": "Barrage Dragon",
+          "label": "PF2E.Dragon.Barrage",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "force",
+            "dragonType": "barrage",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.7mbjjmHgbDNxXR6T",
+          "creatureName": "Barrage Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:bog",
+          "name": "Bog Dragon",
+          "label": "PF2E.Dragon.Bog",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "acid",
+            "dragonType": "bog",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.I1oOJkeMEtucwABL",
+          "creatureName": "Bog Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:brine",
+          "name": "Brine Dragon",
+          "label": "PF2E.Dragon.Brine",
+          "value": {
+            "breathShape": "line",
+            "damageType": "bludgeoning",
+            "dragonType": "brine",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.La2xTgWEI75mXxCy",
+          "creatureName": "Brine Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:cinder",
+          "name": "Cinder Dragon",
+          "label": "PF2E.Dragon.Cinder",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "fire",
+            "dragonType": "cinder",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.plgIbSqjCRc7JFFF",
+          "creatureName": "Cinder Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:cloud",
+          "name": "Cloud Dragon",
+          "label": "PF2E.Dragon.Cloud",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "electricity",
+            "dragonType": "cloud",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.HtaWKsUKKwW6CaLG",
+          "creatureName": "Cloud Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:conspirator",
+          "name": "Conspirator Dragon",
+          "label": "PF2E.Dragon.Conspirator",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "poison",
+            "dragonType": "conspirator",
+            "saveType": "fortitude",
+            "speeds": {
+              "burrow": null,
+              "climb": 40,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.TGYELuImcTcuX0aH",
+          "creatureName": "Conspirator Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb",
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:coral",
+          "name": "Coral Dragon",
+          "label": "PF2E.Dragon.Coral",
+          "value": {
+            "breathShape": "line",
+            "damageType": "bludgeoning",
+            "dragonType": "coral",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.5upnh1nfYmbEjAGK",
+          "creatureName": "Coral Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:crystal",
+          "name": "Crystal Dragon",
+          "label": "PF2E.Dragon.Crystal",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "piercing",
+            "dragonType": "crystal",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.wFcWMrjNtnfSKOYm",
+          "creatureName": "Crystal Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:delight",
+          "name": "Delight Dragon",
+          "label": "PF2E.Dragon.Delight",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "spirit",
+            "dragonType": "delight",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.dticIaShaqZdgUKW",
+          "creatureName": "Delight Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:despair",
+          "name": "Despair Dragon",
+          "label": "PF2E.Dragon.Despair",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "sonic",
+            "dragonType": "despair",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.aX8XLPYr0wNlDX4h",
+          "creatureName": "Despair Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:diabolic",
+          "name": "Diabolic Dragon",
+          "label": "PF2E.Dragon.Diabolic",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "fire",
+            "dragonType": "diabolic",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.CPzquDOPnlHyIoVF",
+          "creatureName": "Diabolic Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:empyreal",
+          "name": "Empyreal Dragon",
+          "label": "PF2E.Dragon.Empyreal",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "spirit",
+            "dragonType": "empyreal",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.i6gxQwKAPhOQZPgs",
+          "creatureName": "Empyreal Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:executor",
+          "name": "Executor Dragon",
+          "label": "PF2E.Dragon.Executor",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "sonic",
+            "dragonType": "executor",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.kzV42aOEEXGE96zx",
+          "creatureName": "Executor Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:forest",
+          "name": "Forest Dragon",
+          "label": "PF2E.Dragon.Forest",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "piercing",
+            "dragonType": "forest",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.S1ZWBUItiQKCsoSr",
+          "creatureName": "Forest Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:fortune",
+          "name": "Fortune Dragon",
+          "label": "PF2E.Dragon.Fortune",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "force",
+            "dragonType": "fortune",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.TdhUDXvkKBctIpH8",
+          "creatureName": "Fortune Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:horned",
+          "name": "Horned Dragon",
+          "label": "PF2E.Dragon.Horned",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "poison",
+            "dragonType": "horned",
+            "saveType": "fortitude",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.ioi5L2CAM6q9aWKJ",
+          "creatureName": "Horned Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:magma",
+          "name": "Magma Dragon",
+          "label": "PF2E.Dragon.Magma",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "fire",
+            "dragonType": "magma",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": 20,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.wc3uAlMMFQhlmTT9",
+          "creatureName": "Magma Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow",
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:mirage",
+          "name": "Mirage Dragon",
+          "label": "PF2E.Dragon.Mirage",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "mental",
+            "dragonType": "mirage",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": 40,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.Cq9Cg5dZ3I3cWXXR",
+          "creatureName": "Mirage Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb",
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:mocking",
+          "name": "Mocking Dragon",
+          "label": "PF2E.Dragon.Mocking",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "bludgeoning",
+            "dragonType": "mocking",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.3sbe5lTQfIZkPquh",
+          "creatureName": "Mocking Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:oath",
+          "name": "Oath Dragon",
+          "label": "PF2E.Dragon.Oath",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "spirit",
+            "dragonType": "oath",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.uEFJO70QbqWtSWBy",
+          "creatureName": "Oath Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:omen",
+          "name": "Omen Dragon",
+          "label": "PF2E.Dragon.Omen",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "mental",
+            "dragonType": "omen",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.awrILpXoGooQKEui",
+          "creatureName": "Omen Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:phase",
+          "name": "Phase Dragon",
+          "label": "PF2E.Dragon.Phase",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "force",
+            "dragonType": "phase",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.IpceyxBj5kTkmQWx",
+          "creatureName": "Phase Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:requiem",
+          "name": "Requiem Dragon",
+          "label": "PF2E.Dragon.Requiem",
+          "value": {
+            "breathShape": "line",
+            "damageType": "spirit",
+            "dragonType": "requiem",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.maz62hCQDR9ZktsA",
+          "creatureName": "Requiem Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:resurrection",
+          "name": "Resurrection Dragon",
+          "label": "PF2E.Dragon.Resurrection",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "void",
+            "dragonType": "resurrection",
+            "saveType": "fortitude",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.v4GX8cUuuA7IyFpl",
+          "creatureName": "Resurrection Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:rime",
+          "name": "Rime Dragon",
+          "label": "PF2E.Dragon.Rime",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "cold",
+            "dragonType": "rime",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.YdR6e9b5oxuBmD2Z",
+          "creatureName": "Rime Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:rune",
+          "name": "Rune Dragon",
+          "label": "PF2E.Dragon.Rune",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "fire",
+            "dragonType": "rune",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.BV71Dm2SSAObPp0W",
+          "creatureName": "Rune Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:sage",
+          "name": "Sage Dragon",
+          "label": "PF2E.Dragon.Sage",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "mental",
+            "dragonType": "sage",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.MwslnfsCT7u4TiuV",
+          "creatureName": "Sage Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:sea",
+          "name": "Sea Dragon",
+          "label": "PF2E.Dragon.Sea",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "bludgeoning",
+            "dragonType": "sea",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.syPyp7ZI9ygqMl5J",
+          "creatureName": "Sea Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:sky",
+          "name": "Sky Dragon",
+          "label": "PF2E.Dragon.Sky",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "electricity",
+            "dragonType": "sky",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "divine"
+          },
+          "group": "divine",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.D7YQwzLCMFSnYOxd",
+          "creatureName": "Sky Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:sovereign",
+          "name": "Sovereign Dragon",
+          "label": "PF2E.Dragon.Sovereign",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "mental",
+            "dragonType": "sovereign",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.NgxX7OjbK40eRFde",
+          "creatureName": "Sovereign Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:stormcrown",
+          "name": "Stormcrown Dragon",
+          "label": "PF2E.Dragon.Stormcrown",
+          "value": {
+            "breathShape": "line",
+            "damageType": "electricity",
+            "dragonType": "stormcrown",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "primal"
+          },
+          "group": "primal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.oVC1yci3BUqDVNep",
+          "creatureName": "Stormcrown Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:time",
+          "name": "Time Dragon",
+          "label": "PF2E.Dragon.Time",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "force",
+            "dragonType": "time",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.jEc2J8hy0Z33XKhk",
+          "creatureName": "Time Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:umbral",
+          "name": "Umbral Dragon",
+          "label": "PF2E.Dragon.Umbral",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "void",
+            "dragonType": "umbral",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.JB9SWlruqX9nKhIO",
+          "creatureName": "Umbral Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:underworld",
+          "name": "Underworld Dragon",
+          "label": "PF2E.Dragon.Underworld",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "fire",
+            "dragonType": "underworld",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": 20,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.QbKEJtqThE5q9XCl",
+          "creatureName": "Underworld Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow",
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:vizier",
+          "name": "Vizier Dragon",
+          "label": "PF2E.Dragon.Vizier",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "fire",
+            "dragonType": "vizier",
+            "saveType": "reflex",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": 60
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.4bsj12VgzkAajw5T",
+          "creatureName": "Vizier Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:vorpal",
+          "name": "Vorpal Dragon",
+          "label": "PF2E.Dragon.Vorpal",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "void",
+            "dragonType": "vorpal",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.JYQd5M92eRnXEO3B",
+          "creatureName": "Vorpal Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:wailing",
+          "name": "Wailing Dragon",
+          "label": "PF2E.Dragon.Wailing",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "sonic",
+            "dragonType": "wailing",
+            "saveType": "fortitude",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.aUnu52gTabyzeTUJ",
+          "creatureName": "Wailing Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:whisper",
+          "name": "Whisper Dragon",
+          "label": "PF2E.Dragon.Whisper",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "mental",
+            "dragonType": "whisper",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": null,
+              "swim": null
+            },
+            "tradition": "occult"
+          },
+          "group": "occult",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.0CCsMvCrYxTCMYrh",
+          "creatureName": "Whisper Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "dragon-form:wish",
+          "name": "Wish Dragon",
+          "label": "PF2E.Dragon.Wish",
+          "value": {
+            "breathShape": "cone",
+            "damageType": "mental",
+            "dragonType": "wish",
+            "saveType": "will",
+            "speeds": {
+              "burrow": null,
+              "climb": 40,
+              "swim": null
+            },
+            "tradition": "arcane"
+          },
+          "group": "arcane",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.lost-omens-bestiary.Actor.6IXJqhdCC8zyQrQm",
+          "creatureName": "Wish Dragon (Adult)",
+          "sizes": [
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb",
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.J60rN48XzBGHmR6m": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.J60rN48XzBGHmR6m",
+      "id": "J60rN48XzBGHmR6m",
+      "name": "Spell Effect: Element Embodied (Air)",
+      "slug": "spell-effect-element-embodied-air",
+      "spell": "element-embodied",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "element-embodied:air",
+          "name": "Air",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.mx2Xpra7bRJP0GuX",
+          "creatureName": "Elemental Hurricane",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.jp88SCE3VCRAyE6x": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.jp88SCE3VCRAyE6x",
+      "id": "jp88SCE3VCRAyE6x",
+      "name": "Spell Effect: Element Embodied (Earth)",
+      "slug": "spell-effect-element-embodied-earth",
+      "spell": "element-embodied",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "element-embodied:earth",
+          "name": "Earth",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.Oq31fcKwH0EE9R89",
+          "creatureName": "Elemental Avalanche",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.lmAwCy7isFvLYdGd": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.lmAwCy7isFvLYdGd",
+      "id": "lmAwCy7isFvLYdGd",
+      "name": "Spell Effect: Element Embodied (Fire)",
+      "slug": "spell-effect-element-embodied-fire",
+      "spell": "element-embodied",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "element-embodied:fire",
+          "name": "Fire",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.yYicb7uJH4EaBO4v",
+          "creatureName": "Elemental Inferno",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.lRfiYmsoQMJZ81NQ": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.lRfiYmsoQMJZ81NQ",
+      "id": "lRfiYmsoQMJZ81NQ",
+      "name": "Spell Effect: Element Embodied (Metal)",
+      "slug": "spell-effect-element-embodied-metal",
+      "spell": "element-embodied",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "element-embodied:metal",
+          "name": "Metal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.rage-of-elements-bestiary.Actor.Z5qBvEJ628DGe8zS",
+          "creatureName": "Melomach",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.w1HwO7huxJoK0gHY": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.w1HwO7huxJoK0gHY",
+      "id": "w1HwO7huxJoK0gHY",
+      "name": "Spell Effect: Element Embodied (Water)",
+      "slug": "spell-effect-element-embodied-water",
+      "spell": "element-embodied",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "element-embodied:water",
+          "name": "Water",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.R427CMT90S7fv7MY",
+          "creatureName": "Elemental Tsunami",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.xPNKt1aQc3dquKlt": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.xPNKt1aQc3dquKlt",
+      "id": "xPNKt1aQc3dquKlt",
+      "name": "Spell Effect: Element Embodied (Wood)",
+      "slug": "spell-effect-element-embodied-wood",
+      "spell": "element-embodied",
+      "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "element-embodied:wood",
+          "name": "Wood",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.rage-of-elements-bestiary.Actor.lQcfACi4RQrjIl5S",
+          "creatureName": "Elemental Thicket",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.Qp0dlhJaCzXIx73r": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.Qp0dlhJaCzXIx73r",
+      "id": "Qp0dlhJaCzXIx73r",
+      "name": "Spell Effect: Elemental Form",
+      "slug": "spell-effect-elemental-form",
+      "spell": "elemental-form",
+      "img": "systems/pf2e/icons/spells/elemental-form.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectElementalForm",
+        "index": 0,
+        "rollOption": "elemental-form"
+      },
+      "forms": [
+        {
+          "key": "elemental-form:air",
+          "name": "Air",
+          "label": "PF2E.TraitAir",
+          "value": "air",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.XgGeD4fz5m7nQQlN",
+          "creatureName": "Living Whirlwind",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "elemental-form:earth",
+          "name": "Earth",
+          "label": "PF2E.TraitEarth",
+          "value": "earth",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.4Ejgj6p1LAu1RAN3",
+          "creatureName": "Living Landslide",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "elemental-form:fire",
+          "name": "Fire",
+          "label": "PF2E.TraitFire",
+          "value": "fire",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.pVbggIyXxCo8pPue",
+          "creatureName": "Living Wildfire",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "elemental-form:metal",
+          "name": "Metal",
+          "label": "PF2E.TraitMetal",
+          "value": "metal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.rage-of-elements-bestiary.Actor.CKRqlCHgvZp9YL5s",
+          "creatureName": "Living Lodestone",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "elemental-form:water",
+          "name": "Water",
+          "label": "PF2E.TraitWater",
+          "value": "water",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.1AZoRkLec47xrTqY",
+          "creatureName": "Living Waterfall",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "elemental-form:wood",
+          "name": "Wood",
+          "label": "PF2E.TraitWood",
+          "value": "wood",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.rage-of-elements-bestiary.Actor.WrGYN6jtEfv7k1pV",
+          "creatureName": "Living Grove",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "med"
+            },
+            {
+              "rank": 6,
+              "size": "lg"
+            },
+            {
+              "rank": 7,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.IWD5RehCxZVfgrX9": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.IWD5RehCxZVfgrX9",
+      "id": "IWD5RehCxZVfgrX9",
+      "name": "Spell Effect: Elephant Form",
+      "slug": "spell-effect-elephant-form",
+      "spell": "elephant-form",
+      "img": "systems/pf2e/icons/spells/elephant-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "elephant-form:default",
+          "name": "Elephant Form",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.1x0BdpVQLX7o3rrA",
+          "creatureName": "Elephant",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 7,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.jeH78c7kyk376PKS": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.jeH78c7kyk376PKS",
+      "id": "jeH78c7kyk376PKS",
+      "name": "Spell Effect: Fey Form",
+      "slug": "spell-effect-fey-form",
+      "spell": "fey-form",
+      "img": "icons/creatures/magical/fae-fairy-winged-glowing-green.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectFeyForm",
+        "index": 0,
+        "rollOption": "fey-form"
+      },
+      "forms": [
+        {
+          "key": "fey-form:dryad",
+          "name": "Dryad",
+          "label": "PF2E.BattleForm.FeyForm.ChoiceSet.Dryad",
+          "value": "dryad",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.4MoqBCDQA6FR1sPw",
+          "creatureName": "Dryad",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "fey-form:elananx",
+          "name": "Elananx",
+          "label": "PF2E.BattleForm.FeyForm.ChoiceSet.Elananx",
+          "value": "elananx",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.RJFpwZIGbuOuCtXr",
+          "creatureName": "Elananx",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "fey-form:naiad",
+          "name": "Naiad",
+          "label": "PF2E.BattleForm.FeyForm.ChoiceSet.Naiad",
+          "value": "naiad",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.Cqi8jadYpUTajIC6",
+          "creatureName": "Naiad",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "fey-form:redcap",
+          "name": "Redcap",
+          "label": "PF2E.BattleForm.FeyForm.ChoiceSet.Redcap",
+          "value": "redcap",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.fWAjkhQ0y50Eh2BT",
+          "creatureName": "Redcap",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "sm"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "fey-form:unicorn",
+          "name": "Unicorn",
+          "label": "PF2E.BattleForm.FeyForm.ChoiceSet.Unicorn",
+          "value": "unicorn",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.lYoAwofYGbhWL75Q",
+          "creatureName": "Unicorn",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "lg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.dQeERSuUeHv9Rib5": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.dQeERSuUeHv9Rib5",
+      "id": "dQeERSuUeHv9Rib5",
+      "name": "Spell Effect: Insect Form",
+      "slug": "spell-effect-insect-form",
+      "spell": "insect-form",
+      "img": "icons/creatures/invertebrates/spider-mandibles-brown.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectInsectForm",
+        "index": 0,
+        "rollOption": "insect-form"
+      },
+      "forms": [
+        {
+          "key": "insect-form:ant",
+          "name": "Ant",
+          "label": "PF2E.BattleForm.InsectForm.ChoiceSet.Ant",
+          "value": "ant",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.mEZUTqNIgu0ASApu",
+          "creatureName": "Giant Ant",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "insect-form:beetle",
+          "name": "Beetle",
+          "label": "PF2E.BattleForm.InsectForm.ChoiceSet.Beetle",
+          "value": "beetle",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.MkupNnMKqDBElhhp",
+          "creatureName": "Giant Stag Beetle",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "insect-form:centipede",
+          "name": "Centipede",
+          "label": "PF2E.BattleForm.InsectForm.ChoiceSet.Centipede",
+          "value": "centipede",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.NRBgcu0LkXXp8mtp",
+          "creatureName": "Giant Centipede",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "insect-form:mantis",
+          "name": "Mantis",
+          "label": "PF2E.BattleForm.InsectForm.ChoiceSet.Mantis",
+          "value": "mantis",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.KCVKMVYRuq6huXGz",
+          "creatureName": "Giant Mantis",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "insect-form:scorpion",
+          "name": "Scorpion",
+          "label": "PF2E.BattleForm.InsectForm.ChoiceSet.Scorpion",
+          "value": "scorpion",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.BWm17BRQYGMLqtNe",
+          "creatureName": "Giant Scorpion",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "insect-form:spider",
+          "name": "Spider",
+          "label": "PF2E.BattleForm.InsectForm.ChoiceSet.Spider",
+          "value": "spider",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.A4VgQIHsqJKssQOM",
+          "creatureName": "Hunting Spider",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.oMtbVNQ5YFmmQUlU": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.oMtbVNQ5YFmmQUlU",
+      "id": "oMtbVNQ5YFmmQUlU",
+      "name": "Spell Effect: Monstrosity Form",
+      "slug": "spell-effect-monstrosity-form",
+      "spell": "monstrosity-form",
+      "img": "systems/pf2e/icons/spells/monstrosity-form.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectMonstrosityForm",
+        "index": 0,
+        "rollOption": "monstrosity-form"
+      },
+      "forms": [
+        {
+          "key": "monstrosity-form:cave-worm",
+          "name": "Cave Worm",
+          "label": "PF2E.BattleForm.MonstrosityForm.ChoiceSet.CaveWorm",
+          "value": "cave-worm",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.vijBriZmbUJjbJNH",
+          "creatureName": "Cave Worm",
+          "sizes": [
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "burrow",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "monstrosity-form:phoenix",
+          "name": "Phoenix",
+          "label": "PF2E.BattleForm.MonstrosityForm.ChoiceSet.Phoenix",
+          "value": "phoenix",
+          "predicate": [
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "not": "self:effect:untamed-form"
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    "self:effect:untamed-form",
+                    "feat:soaring-shape"
+                  ]
+                }
+              ]
+            }
+          ],
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.mQJL411e9Iz8dJoh",
+          "creatureName": "Phoenix",
+          "sizes": [
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "monstrosity-form:sea-serpent",
+          "name": "Sea Serpent",
+          "label": "PF2E.BattleForm.MonstrosityForm.ChoiceSet.SeaSerpent",
+          "value": "sea-serpent",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.PUPnGG406PanzIvL",
+          "creatureName": "Sea Serpent",
+          "sizes": [
+            {
+              "rank": 8,
+              "size": "huge"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "swim"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.bzpW0owbAV3UX7UA": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.bzpW0owbAV3UX7UA",
+      "id": "bzpW0owbAV3UX7UA",
+      "name": "Spell Effect: Monstrosity Form (Kaiju)",
+      "slug": "spell-effect-monstrosity-form-kaiju",
+      "spell": "monstrosity-form",
+      "img": "systems/pf2e/icons/spells/monstrosity-form.webp",
+      "untamedOnly": true,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "monstrosity-form:kaiju",
+          "name": "Kaiju",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.war-of-immortals-bestiary.Actor.yQIro3136G7EUgLQ",
+          "creatureName": "Agyra",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": true
+    },
+    "Compendium.pf2e.spell-effects.Item.hfcFc8cV5wF2evWP": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.hfcFc8cV5wF2evWP",
+      "id": "hfcFc8cV5wF2evWP",
+      "name": "Spell Effect: Nature Incarnate",
+      "slug": "spell-effect-nature-incarnate",
+      "spell": "nature-incarnate",
+      "img": "icons/magic/nature/tree-animated-strike.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "natureIncarnate",
+        "index": 0,
+        "rollOption": "nature-incarnate"
+      },
+      "forms": [
+        {
+          "key": "nature-incarnate:green-man",
+          "name": "Green Man",
+          "label": "PF2E.BattleForm.NatureIncarnate.GreenMan",
+          "value": "green-man",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.vpXcLtLPWNRGSQWA",
+          "creatureName": "Green Man",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "nature-incarnate:kaiju",
+          "name": "Kaiju",
+          "label": "PF2E.BattleForm.NatureIncarnate.Kaiju",
+          "value": "kaiju",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.war-of-immortals-bestiary.Actor.yQIro3136G7EUgLQ",
+          "creatureName": "Agyra",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.ciQhlQbQcarzRYzf": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.ciQhlQbQcarzRYzf",
+      "id": "ciQhlQbQcarzRYzf",
+      "name": "Spell Effect: Ooze Form",
+      "slug": "spell-effect-ooze-form",
+      "spell": "ooze-form",
+      "img": "icons/creatures/slimes/slime-face-hollow-green.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectOozeForm",
+        "index": 0,
+        "rollOption": "ooze-form"
+      },
+      "forms": [
+        {
+          "key": "ooze-form:black-pudding",
+          "name": "Black Pudding",
+          "label": "PF2E.BattleForm.OozeForm.ChoiceSet.BlackPudding",
+          "value": "black-pudding",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.saEPHCN5lDiylb5H",
+          "creatureName": "Black Pudding",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 8,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "ooze-form:gelatinous-cube",
+          "name": "Gelatinous Cube",
+          "label": "PF2E.BattleForm.OozeForm.ChoiceSet.GelatinousCube",
+          "value": "gelatinous-cube",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.TZcDdN5o7s4alZNE",
+          "creatureName": "Gelatinous Cube",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 8,
+              "size": "grg"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "ooze-form:gray-ooze",
+          "name": "Gray Ooze",
+          "label": "PF2E.BattleForm.OozeForm.ChoiceSet.GrayOoze",
+          "value": "gray-ooze",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-2.Actor.V6OBYa51VcehPj22",
+          "creatureName": "Gray Ooze",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 8,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb",
+                "swim"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "ooze-form:ochre-jelly",
+          "name": "Ochre Jelly",
+          "label": "PF2E.BattleForm.OozeForm.ChoiceSet.OchreJelly",
+          "value": "ochre-jelly",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary.Actor.uQBOJfjtzEXvpLQz",
+          "creatureName": "Ochre Jelly",
+          "sizes": [
+            {
+              "rank": 3,
+              "size": "med"
+            },
+            {
+              "rank": 4,
+              "size": "lg"
+            },
+            {
+              "rank": 5,
+              "size": "huge"
+            },
+            {
+              "rank": 8,
+              "size": "grg"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 0,
+              "types": [
+                "climb"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.ydsLEGjY89Akc4oZ": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.ydsLEGjY89Akc4oZ",
+      "id": "ydsLEGjY89Akc4oZ",
+      "name": "Spell Effect: Pest Form",
+      "slug": "spell-effect-pest-form",
+      "spell": "pest-form",
+      "img": "systems/pf2e/icons/spells/pest-form.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "pest-form:rat",
+          "name": "Rat",
+          "label": "SARGAS_FORMS.Cosmetic.Rat",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.iIJPJcDT8wlJ8z5M",
+          "creatureName": "Giant Rat",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:cat",
+          "name": "Cat",
+          "label": "SARGAS_FORMS.Cosmetic.Cat",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pfs-season-1-bestiary.Actor.24UI02EJVRSO6KZx",
+          "creatureName": "House Cat",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:fox",
+          "name": "Fox",
+          "label": "SARGAS_FORMS.Cosmetic.Fox",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-3.Actor.nr8EXKLSejspbb3d",
+          "creatureName": "Red Fox",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:frog",
+          "name": "Frog",
+          "label": "SARGAS_FORMS.Cosmetic.Frog",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.KIwZekBcdyBX8X9k",
+          "creatureName": "Spear Frog",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:monkey",
+          "name": "Monkey",
+          "label": "SARGAS_FORMS.Cosmetic.Monkey",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-3.Actor.pFUv7BzSjYTOo5mO",
+          "creatureName": "Monkey",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:snake",
+          "name": "Snake",
+          "label": "SARGAS_FORMS.Cosmetic.Snake",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.1uVwkGlqYzyWaDMy",
+          "creatureName": "Viper",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:weasel",
+          "name": "Weasel",
+          "label": "SARGAS_FORMS.Cosmetic.Weasel",
+          "cosmetic": true,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-bestiary-3.Actor.aepfNXXy2juozgzB",
+          "creatureName": "Weasel",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pest-form:raven",
+          "name": "Raven",
+          "label": "SARGAS_FORMS.Cosmetic.Raven",
+          "cosmetic": true,
+          "minRank": 4,
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core-2.Actor.WzHEogHdIeOWUnfe",
+          "creatureName": "Trained Raven",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "tiny"
+            }
+          ],
+          "movement": [
+            {
+              "rank": 4,
+              "types": [
+                "fly"
+              ]
+            }
+          ]
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.tu8FyCtmL3YYR2jL": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.tu8FyCtmL3YYR2jL",
+      "id": "tu8FyCtmL3YYR2jL",
+      "name": "Spell Effect: Plant Form",
+      "slug": "spell-effect-plant-form",
+      "spell": "plant-form",
+      "img": "systems/pf2e/icons/spells/plant-form.webp",
+      "untamedOnly": false,
+      "choiceSet": {
+        "flag": "spellEffectPlantForm",
+        "index": 0,
+        "rollOption": "plant-form"
+      },
+      "forms": [
+        {
+          "key": "plant-form:arboreal",
+          "name": "Arboreal",
+          "label": "PF2E.BattleForm.PlantForm.ChoiceSet.Arboreal",
+          "value": "arboreal",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.0rm0UDbXvwg4sSxQ",
+          "creatureName": "Arboreal Warden",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        },
+        {
+          "key": "plant-form:flytrap",
+          "name": "Flytrap",
+          "label": "PF2E.BattleForm.PlantForm.ChoiceSet.Flytrap",
+          "value": "flytrap",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.ka7bXO7HIfBxk8Gy",
+          "creatureName": "Giant Flytrap",
+          "sizes": [
+            {
+              "rank": 5,
+              "size": "lg"
+            },
+            {
+              "rank": 6,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.gOeu0lPtKQcLh1Xz": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.gOeu0lPtKQcLh1Xz",
+      "id": "gOeu0lPtKQcLh1Xz",
+      "name": "Spell Effect: Primal Herd",
+      "slug": "spell-effect-primal-herd",
+      "spell": "primal-herd",
+      "img": "icons/magic/unholy/hands-circle-light-green.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "primal-herd:default",
+          "name": "Primal Herd",
+          "battleForm": true,
+          "creature": "Compendium.pf2e.pathfinder-monster-core.Actor.jkp7THTZMc0ivN8Y",
+          "creatureName": "Mammoth",
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "huge"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    },
+    "Compendium.pf2e.spell-effects.Item.W4lb3417rNDd9tCq": {
+      "uuid": "Compendium.pf2e.spell-effects.Item.W4lb3417rNDd9tCq",
+      "id": "W4lb3417rNDd9tCq",
+      "name": "Spell Effect: Sacred Form",
+      "slug": "spell-effect-sacred-form",
+      "spell": "sacred-form",
+      "img": "systems/pf2e/icons/spells/righteous-might.webp",
+      "untamedOnly": false,
+      "choiceSet": null,
+      "forms": [
+        {
+          "key": "sacred-form:default",
+          "name": "Sacred Form",
+          "battleForm": true,
+          "creature": null,
+          "creatureName": null,
+          "sizes": [
+            {
+              "rank": 0,
+              "size": "med"
+            },
+            {
+              "rank": 8,
+              "size": "lg"
+            }
+          ],
+          "movement": []
+        }
+      ],
+      "legacy": false
+    }
+  }
+}

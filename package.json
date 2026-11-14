@@ -10,6 +10,9 @@
   },
   "scripts": {
     "prepare": "git config core.hooksPath .githooks",
+    "fetch:pf2e": "node scripts/fetch-pf2e.mjs",
+    "build:forms": "node scripts/build-forms.mjs",
+    "check:pf2e": "node scripts/check-pf2e.mjs",
     "build": "node scripts/build.mjs",
     "package": "node scripts/package.mjs",
     "check:art": "node scripts/check-no-art.mjs",

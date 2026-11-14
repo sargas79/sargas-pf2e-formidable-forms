@@ -3,5 +3,5 @@
 set -e
 node scripts/check-no-art.mjs
 npm run --silent lint
-npm run --silent format:check
-npm test --silent
+npx prettier --check --log-level warn .
+node --test --test-reporter=dot

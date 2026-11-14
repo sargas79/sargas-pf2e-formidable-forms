@@ -11,7 +11,19 @@
       "Raven": "Raven"
     },
     "Notify": {
-      "SizeNotLinked": "{name}'s token did not change size with the form because \"Link to actor size\" is turned off in its token settings."
+      "SizeNotLinked": "{name}'s token did not change size with the form because \"Link to actor size\" is turned off in its token settings.",
+      "NoForms": "{actor} has no form available for {spell}.",
+      "ApplyFailed": "The form for {spell} could not be applied. See the console (F12) for details."
+    },
+    "Settings": {
+      "AutoApply": {
+        "Name": "Apply battle forms on cast",
+        "Hint": "When a battle-form spell or Untamed Form is cast, ask the caster which form to take and apply its effect. Turn this off to apply effects by hand from the chat card; they still get the form's token art."
+      }
+    },
+    "Picker": {
+      "Title": "Choose a form: {spell}",
+      "Apply": "Transform"
     }
   }
 }

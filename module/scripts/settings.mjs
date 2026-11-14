@@ -1,6 +1,6 @@
 // The module's settings. Reads fall back to a default while a setting is not registered, so features can be used
 // before the code that registers their setting has run.
-import { MODULE_ID } from './constants.mjs';
+import { I18N, MODULE_ID } from './constants.mjs';
 
 export const SETTING = Object.freeze({
   /** World: apply the effect when a battle-form spell is cast. */
@@ -21,4 +21,16 @@ const DEFAULTS = {
 export function getSetting(key) {
   if (!game.settings.settings.has(`${MODULE_ID}.${key}`)) return DEFAULTS[key];
   return game.settings.get(MODULE_ID, key);
+}
+
+/** Registers the settings. Called on `init`. */
+export function registerSettings() {
+  game.settings.register(MODULE_ID, SETTING.AUTO_APPLY, {
+    name: `${I18N}.Settings.AutoApply.Name`,
+    hint: `${I18N}.Settings.AutoApply.Hint`,
+    scope: 'world',
+    config: true,
+    type: Boolean,
+    default: DEFAULTS[SETTING.AUTO_APPLY],
+  });
 }

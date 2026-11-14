@@ -9,6 +9,9 @@
       "Snake": "Snake",
       "Weasel": "Weasel",
       "Raven": "Raven"
+    },
+    "Notify": {
+      "SizeNotLinked": "{name}'s token did not change size with the form because \"Link to actor size\" is turned off in its token settings."
     }
   }
 }

@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import {
   allForms,
+  creaturePacks,
   deepEqual,
   deriveForm,
   findChoiceSetIndex,
@@ -12,6 +13,7 @@ import {
   isSameEffect,
   isUntamedEffect,
   movementAtRank,
+  parseCompendiumUuid,
   sizeAtRank,
 } from '../module/scripts/catalogue.mjs';
 import { MODULE_ID } from '../module/scripts/constants.mjs';
@@ -174,4 +176,22 @@ test("the selection is read from the flag scope of the catalogue's system", () =
   // Another system's flags are not this catalogue's.
   assert.equal(deriveForm(catalogue, animal, source), null);
   assert.equal(deriveForm({ ...catalogue, system: 'sf2e' }, animal, source).key, 'animal-form:cat');
+});
+
+test('creature UUIDs name the packs whose indexes hold the token images', () => {
+  assert.deepEqual(parseCompendiumUuid('Compendium.pf2e.pathfinder-monster-core.Actor.abcdefgh12345678'), {
+    pack: 'pf2e.pathfinder-monster-core',
+    id: 'abcdefgh12345678',
+  });
+  for (const other of [null, undefined, '', 'Actor.abc', 'Compendium.pf2e.pack', 42]) {
+    assert.equal(parseCompendiumUuid(other), null);
+  }
+  const packs = creaturePacks(catalogue);
+  assert.ok(packs.includes('pf2e.pathfinder-monster-core'));
+  assert.ok(packs.includes('pf2e.pathfinder-monster-core-2'));
+  assert.equal(new Set(packs).size, packs.length);
+  // Every creature in the catalogue is in one of them.
+  for (const { form } of allForms(catalogue)) {
+    if (form.creature) assert.ok(packs.includes(parseCompendiumUuid(form.creature).pack), form.key);
+  }
 });

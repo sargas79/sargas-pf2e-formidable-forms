@@ -159,3 +159,18 @@ export function isFormAvailable(form, { rank, options = [], untamed = false }) {
   else domain.delete('self:effect:untamed-form');
   return testPredicate(form.predicate, domain);
 }
+
+/**
+ * Splits a compendium document UUID ("Compendium.pf2e.pathfinder-monster-core.Actor.<id>") into the pack's
+ * collection id ("pf2e.pathfinder-monster-core") and the document id. Null for anything else.
+ */
+export function parseCompendiumUuid(uuid) {
+  const [type, scope, pack, , id] = typeof uuid === 'string' ? uuid.split('.') : [];
+  return type === 'Compendium' && scope && pack && id ? { pack: `${scope}.${pack}`, id } : null;
+}
+
+/** The collection ids of the compendium packs the catalogue's creatures live in. */
+export function creaturePacks(catalogue) {
+  const packs = allForms(catalogue).map(({ form }) => parseCompendiumUuid(form.creature)?.pack);
+  return [...new Set(packs.filter(Boolean))].sort();
+}

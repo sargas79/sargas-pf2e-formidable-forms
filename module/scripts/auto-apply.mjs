@@ -1,4 +1,5 @@
 // Applies a battle form when its spell is cast: the Foundry side of cast.mjs.
+import { creatureTokensReady } from './art-env.mjs';
 import { findForm } from './catalogue.mjs';
 import { buildEffectSource, buildOriginContext, findFormEffectIds, parseCast, planUntamedForm } from './cast.mjs';
 import { I18N, MODULE_ID } from './constants.mjs';
@@ -56,7 +57,9 @@ export async function applyForm(actor, choice, cast, { message, spell }) {
   const traits = effectTraits(spell);
   const { castRank } = cast;
 
-  // Load everything before touching the actor, so a failure leaves the current form in place.
+  // Load everything before touching the actor, so a failure leaves the current form in place. That includes the
+  // pack indexes the token image hook reads creature tokens from: it runs synchronously and cannot wait for them.
+  await creatureTokensReady();
   const formSource = await compendiumSource(entry.uuid);
   const steps = choice.untamedValue
     ? planUntamedForm({

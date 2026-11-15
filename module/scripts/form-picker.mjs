@@ -2,7 +2,7 @@
 // the special movement types. Untamed Form gets two steps: the spell form first, then the creature.
 //
 // The cast handler only depends on `pickForm(actor, spellEntry, castRank)`.
-import { artEnvironment } from './art-env.mjs';
+import { artEnvironment, creatureTokensReady } from './art-env.mjs';
 import { resolveFormArt } from './art.mjs';
 import { movementAtRank, sizeAtRank } from './catalogue.mjs';
 import { I18N, MODULE_ID, MODULE_PATH } from './constants.mjs';
@@ -244,6 +244,8 @@ export async function pickForm(actor, spellEntry, castRank) {
   // Nothing to choose (Elephant Form, Sacred Form): apply the only form without asking.
   if (choices.length === 1) return toResult(choices[0]);
 
+  // The cards show the creatures' compendium tokens, which need the pack indexes.
+  await creatureTokensReady();
   const lastKey = actor.getFlag(MODULE_ID, LAST_FORMS_FLAG)?.[spellEntry.slug];
   const choice = await FormPicker.wait({ actor, spell: spellEntry, rank: castRank, choices, lastKey });
   if (!choice) return null;

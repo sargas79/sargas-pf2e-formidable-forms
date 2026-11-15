@@ -1,7 +1,7 @@
 // GM window opened from the module settings: every form in the catalogue, grouped by spell, with the image the
 // resolver picks for it and where that image comes from. The GM can set an image of their own for any form, and
 // reset it. Overrides win over every other source the next time the form is applied.
-import { artEnvironment } from './art-env.mjs';
+import { artEnvironment, creatureTokensReady } from './art-env.mjs';
 import { I18N, MODULE_ID, MODULE_PATH } from './constants.mjs';
 import { catalogue } from './data.mjs';
 import { formName } from './form-picker.mjs';
@@ -32,6 +32,7 @@ export class FormArtManager extends HandlebarsApplicationMixin(ApplicationV2) {
   #query = '';
 
   async _prepareContext() {
+    await creatureTokensReady();
     // Art is resolved for a plain token; a token with the dynamic ring may show the ring subject an art module
     // registers instead.
     const spells = listArtRows(catalogue, artEnvironment()).map((spell) => ({

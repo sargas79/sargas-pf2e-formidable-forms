@@ -1,6 +1,7 @@
 // The Foundry side of the art resolver: the world's overrides, the compendium art mapping, the compendium
 // creatures' own token images and the target token's ring, packaged as the `env` that `resolveFormArt` takes.
-import { allForms } from './catalogue.mjs';
+import { creaturePacks, parseCompendiumUuid } from './catalogue.mjs';
+import { MODULE_ID } from './constants.mjs';
 import { catalogue } from './data.mjs';
 import { SETTING, getSetting } from './settings.mjs';
 import { chooseToken, ringSettingsOf } from './token-image.mjs';
@@ -8,36 +9,33 @@ import { chooseToken, ringSettingsOf } from './token-image.mjs';
 /** Prototype token fields added to the compendium indexes, so creature tokens can be read without loading actors. */
 const INDEX_FIELDS = ['prototypeToken.texture.src', 'prototypeToken.ring.subject.texture'];
 
+/** The one indexing run, shared by everyone who needs the creature tokens. */
+let indexing = null;
+
 /**
- * Loads the token fields into the index of every pack the catalogue points at. The token image hook cannot wait
- * for a compendium, so this runs once when the world is ready; until it finishes, creature tokens are skipped.
+ * Loads the token fields into the index of every pack the catalogue's creatures are in. Runs once: the first call
+ * starts it (the module does so when the world is ready) and every call returns the same promise. The picker, the
+ * Form Art manager and the cast handler await it, so a cast made right after the world loads still finds the
+ * creature tokens. The token image hook is synchronous and cannot wait; by the time it runs for a cast, the cast
+ * handler has already waited.
+ * @returns {Promise<void>}
  */
-export async function preloadCreatureTokens() {
-  const packIds = new Set(
-    allForms(catalogue)
-      .map(({ form }) => parseCreatureUuid(form.creature)?.pack)
-      .filter(Boolean),
-  );
-  await Promise.all(
-    [...packIds].map(async (id) => {
+export function creatureTokensReady() {
+  indexing ??= Promise.all(
+    creaturePacks(catalogue).map(async (id) => {
       try {
         await game.packs.get(id)?.getIndex({ fields: INDEX_FIELDS });
       } catch (error) {
-        console.warn(`sargas-pf2e-formidable-forms | Could not index ${id}`, error);
+        console.warn(`${MODULE_ID} | Could not index ${id}`, error);
       }
     }),
-  );
-}
-
-/** Splits "Compendium.pf2e.pathfinder-monster-core.Actor.<id>" into the pack's collection id and the document id. */
-function parseCreatureUuid(uuid) {
-  const [type, scope, pack, , id] = (uuid ?? '').split('.');
-  return type === 'Compendium' && id ? { pack: `${scope}.${pack}`, id } : null;
+  ).then(() => undefined);
+  return indexing;
 }
 
 /** A compendium creature's prototype token data from its pack's index, or null when it is not indexed. */
 function getCreatureToken(uuid) {
-  const parsed = parseCreatureUuid(uuid);
+  const parsed = parseCompendiumUuid(uuid);
   const entry = parsed && game.packs.get(parsed.pack)?.index.get(parsed.id);
   return entry ? (foundry.utils.getProperty(entry, 'prototypeToken') ?? null) : null;
 }

@@ -1,5 +1,5 @@
 // Entry point: wires the features to Foundry's hooks.
-import { preloadCreatureTokens } from './art-env.mjs';
+import { creatureTokensReady } from './art-env.mjs';
 import { registerAutoApplyHook } from './auto-apply.mjs';
 import { MODULE_ID } from './constants.mjs';
 import { FormArtManager } from './form-art-manager.mjs';
@@ -15,5 +15,5 @@ Hooks.once('init', () => {
 });
 
 Hooks.once('ready', () => {
-  preloadCreatureTokens();
+  creatureTokensReady();
 });

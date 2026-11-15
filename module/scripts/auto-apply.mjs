@@ -83,7 +83,8 @@ export async function applyForm(actor, choice, cast, { message, spell }) {
   // Tell the token image hook which token cast the spell: its ring settings decide how the art is written.
   const token = message.token?.uuid ?? null;
   for (const { sources, operation } of steps) {
-    const hints = { ...operation[MODULE_ID], token };
+    // `applied` tells the createItem hook that room was already made for these effects.
+    const hints = { ...operation[MODULE_ID], token, applied: true };
     await actor.createEmbeddedDocuments('Item', sources, { ...operation, [MODULE_ID]: hints });
   }
 }

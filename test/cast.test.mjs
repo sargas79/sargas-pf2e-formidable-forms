@@ -5,6 +5,7 @@ import {
   buildEffectSource,
   buildOriginContext,
   findFormEffectIds,
+  findReplacedFormEffectIds,
   parseCast,
   planUntamedForm,
   unlockedEffects,
@@ -370,4 +371,95 @@ test('the plan fails loudly when the Untamed Form effect changes shape', () => {
       untamedId: 'x',
     }),
   );
+});
+
+/* -------------------------------------------- */
+/*  Replacing a form applied by hand             */
+/* -------------------------------------------- */
+
+/** An effect on an actor, with the grant flags the system writes. */
+function owned(name, id, { grantedBy, grants = [] } = {}) {
+  const source = effectSource(name);
+  source._id = id;
+  source.flags.pf2e = {
+    ...(grantedBy ? { grantedBy: { id: grantedBy, onDelete: 'cascade' } } : {}),
+    itemGrants: Object.fromEntries(grants.map((grant, i) => [`grant${i}`, { id: grant, onDelete: 'cascade' }])),
+  };
+  return source;
+}
+
+test('a form applied by hand replaces the battle form already on the actor', () => {
+  const items = [
+    owned('Spell Effect: Animal Form', 'old0000000000000'),
+    owned('Spell Effect: Dragon Form', 'new0000000000000'),
+    { _id: 'bless00000000000', type: 'effect', system: { slug: 'spell-effect-bless' }, flags: {} },
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['new0000000000000']), ['old0000000000000']);
+  // The first form on an actor replaces nothing.
+  assert.deepEqual(findReplacedFormEffectIds(items.slice(1), catalogue, ['new0000000000000']), []);
+});
+
+test('creating something that is not a form effect removes nothing', () => {
+  const items = [
+    owned('Spell Effect: Animal Form', 'old0000000000000'),
+    { _id: 'bless00000000000', type: 'effect', system: { slug: 'spell-effect-bless' }, flags: {} },
+    owned('Spell Effect: Untamed Form', 'untamed000000000'),
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['bless00000000000']), []);
+  // The Untamed Form effect on its own is not a form (the two-step path creates it after its form).
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['untamed000000000']), []);
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, []), []);
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['gone000000000000']), []);
+});
+
+test('an old Untamed Form and the form it granted are both replaced', () => {
+  const items = [
+    owned('Spell Effect: Untamed Form', 'oldUntamed000000', { grants: ['oldBear000000000'] }),
+    owned('Spell Effect: Animal Form', 'oldBear000000000', { grantedBy: 'oldUntamed000000' }),
+    owned('Spell Effect: Dragon Form', 'new0000000000000'),
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['new0000000000000']), [
+    'oldUntamed000000',
+    'oldBear000000000',
+  ]);
+});
+
+test('Untamed Form applied by hand keeps its own effect and the form it grants', () => {
+  // The system creates both in one operation; only the granted one may be reported by the hook.
+  const items = [
+    owned('Spell Effect: Elephant Form', 'old0000000000000'),
+    owned('Spell Effect: Untamed Form', 'newUntamed000000', { grants: ['newBear000000000'] }),
+    owned('Spell Effect: Animal Form', 'newBear000000000', { grantedBy: 'newUntamed000000' }),
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['newBear000000000']), ['old0000000000000']);
+  assert.deepEqual(findReplacedFormEffectIds(items, catalogue, ['newUntamed000000', 'newBear000000000']), [
+    'old0000000000000',
+  ]);
+});
+
+test('everything created in the same operation is kept, as is anything linked to it', () => {
+  // Two forms created together are both new.
+  const together = [
+    owned('Spell Effect: Animal Form', 'a000000000000000'),
+    owned('Spell Effect: Dragon Form', 'b000000000000000'),
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(together, catalogue, ['a000000000000000', 'b000000000000000']), []);
+
+  // The two-step Untamed Form path: the Dragon Form effect exists, then Untamed Form is created and linked to it.
+  const linked = [
+    owned('Spell Effect: Dragon Form', 'dragon0000000000', { grantedBy: 'untamed000000000' }),
+    owned('Spell Effect: Untamed Form', 'untamed000000000', { grants: ['dragon0000000000'] }),
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(linked, catalogue, ['dragon0000000000']), []);
+  assert.deepEqual(findReplacedFormEffectIds(linked, catalogue, ['untamed000000000']), []);
+
+  // The action Dragon Form grants is not a form effect and is never touched.
+  const withBreath = [
+    owned('Spell Effect: Animal Form', 'old0000000000000'),
+    owned('Spell Effect: Dragon Form', 'dragon0000000000', { grants: ['breath0000000000'] }),
+    { _id: 'breath0000000000', type: 'action', flags: { pf2e: { grantedBy: { id: 'dragon0000000000' } } } },
+  ];
+  assert.deepEqual(findReplacedFormEffectIds(withBreath, catalogue, ['dragon0000000000', 'breath0000000000']), [
+    'old0000000000000',
+  ]);
 });

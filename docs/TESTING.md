@@ -66,8 +66,15 @@ Foundry server, so every item is a real check, not a formality.
       its size afterwards. The module has no size code; this confirms the system does it.
 - [ ] Turn **Link to actor size** off in the token's settings and apply a form that changes size: a warning explains
       why the token did not grow. It appears once per actor per session, only for the user who applied the effect.
-- [ ] Apply the same effect twice (drag it again while one is active): the effect has **one** `TokenImage` rule
-      (open the effect's Rules tab), not two.
+- [ ] Apply the same effect twice (drag it again while one is active): the first effect is removed, and the one
+      that stays has **one** `TokenImage` rule (open the effect's Rules tab), not two.
+- [ ] With Animal Form active, drag **Dragon Form** onto the token by hand: Animal Form is removed once Dragon Form
+      is created, and its granted Dragon Breath action stays. Cancelling the system's prompt leaves Animal Form on.
+- [ ] With an Untamed Form (and its granted form) active, drag another form by hand: both old effects are removed.
+      Drag **Spell Effect: Untamed Form** by hand onto an actor with a form: the old form goes, and the new Untamed
+      Form effect and the form it grants both stay.
+- [ ] Duplicate an owned form effect to another actor's sheet (drag between sheets): the copy has one rule, written
+      for the new actor's token.
 - [ ] Drag an effect that is not a battle form (for example Spell Effect: Bless): it has no `TokenImage` rule.
 - [ ] Apply Devouring Dark Form and choose **Tentacle**: the token keeps its image.
 - [ ] Apply a form with no art (Cosmic Form, or any form with the art module switched off): the effect applies and

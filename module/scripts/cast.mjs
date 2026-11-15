@@ -230,3 +230,41 @@ export function planUntamedForm({
     { sources: [source], operation: { keepId: true } },
   ];
 }
+
+/**
+ * The battle-form effects to remove after form effects were created by hand (from the chat card, by drag and drop
+ * or from the compendium), so that the new form replaces the old one instead of stacking with it.
+ *
+ * Everything that belongs to the new form is kept: what was created in the same operation, and whatever is linked
+ * to it by a grant in either direction (the Untamed Form effect and the form effect it grants).
+ * @param {object[]} items The actor's item sources, after the creation
+ * @param {object} catalogue
+ * @param {string[]} created The ids of the items created in the operation
+ * @returns {string[]} Empty unless one of the created items is a catalogue form effect
+ */
+export function findReplacedFormEffectIds(items, catalogue, created = []) {
+  const byId = new Map(items.map((item) => [item._id, item]));
+  if (!created.some((id) => findEffectEntry(catalogue, byId.get(id)))) return [];
+
+  const linksOf = (item) => {
+    const flags = item.flags?.[catalogue.system];
+    const grants = Object.values(flags?.itemGrants ?? {}).map((grant) => grant?.id);
+    return [flags?.grantedBy?.id, ...grants].filter((id) => typeof id === 'string');
+  };
+  const keep = new Set(created);
+  let grew = true;
+  while (grew) {
+    grew = false;
+    for (const item of items) {
+      const links = linksOf(item);
+      const additions = keep.has(item._id)
+        ? links.filter((id) => !keep.has(id))
+        : links.some((id) => keep.has(id))
+          ? [item._id]
+          : [];
+      for (const id of additions) keep.add(id);
+      grew ||= additions.length > 0;
+    }
+  }
+  return findFormEffectIds(items, catalogue).filter((id) => !keep.has(id));
+}

@@ -24,7 +24,8 @@ const createdItems = new Map();
 
 /** Adds the TokenImage rule to a form effect that is about to be created on an actor. */
 function onPreCreateItem(item, _data, options) {
-  if (item.type !== 'effect' || !item.actor) return;
+  // Most items are not battle forms: look the effect up before doing any other work.
+  if (item.type !== 'effect' || !item.actor || !findEffectEntry(catalogue, item._source)) return;
   const hints = options?.[MODULE_ID];
   const plan = planTokenImage(catalogue, item.toObject(), {
     // The cast handler says which token cast the spell; otherwise the actor's most specific token is used.
@@ -80,7 +81,7 @@ async function replaceOtherForms(actorUuid) {
 function warnAboutSize(item, options) {
   const source = item.toObject();
   const entry = findEffectEntry(catalogue, source);
-  const form = entry && deriveForm(entry, source);
+  const form = entry && deriveForm(catalogue, entry, source);
   if (!form || sizeAtRank(form, source.system?.level?.value ?? 0) === null) return;
 
   const actor = item.actor;

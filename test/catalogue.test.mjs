@@ -93,34 +93,37 @@ test('a selection maps back to its form', () => {
 test('the form of an effect comes from the module flag, a hint, the selection, or its only form', () => {
   const chosen = effectSource('Spell Effect: Animal Form');
   chosen.system.rules[0].selection = 'bear';
-  assert.equal(deriveForm(animal, chosen).key, 'animal-form:bear');
+  assert.equal(deriveForm(catalogue, animal, chosen).key, 'animal-form:bear');
 
   // The system also records the selection in the item's flags.
   const flagged = effectSource('Spell Effect: Animal Form');
   flagged.flags.pf2e = { rulesSelections: { spellEffectAnimalForm: 'cat' } };
-  assert.equal(deriveForm(animal, flagged).key, 'animal-form:cat');
+  assert.equal(deriveForm(catalogue, animal, flagged).key, 'animal-form:cat');
 
   // No selection yet: unknown.
-  assert.equal(deriveForm(animal, effectSource('Spell Effect: Animal Form')), null);
+  assert.equal(deriveForm(catalogue, animal, effectSource('Spell Effect: Animal Form')), null);
 
   const dragonSource = effectSource('Spell Effect: Dragon Form');
   dragonSource.system.rules[0].selection = structuredClone(formByKey('dragon-form:wish').value);
-  assert.equal(deriveForm(dragon, dragonSource).key, 'dragon-form:wish');
+  assert.equal(deriveForm(catalogue, dragon, dragonSource).key, 'dragon-form:wish');
 
   // Single-form effects need no selection.
   const [elephant] = effectsOf('elephant-form');
-  assert.equal(deriveForm(elephant, effectSource('Spell Effect: Elephant Form')).key, 'elephant-form:default');
+  assert.equal(
+    deriveForm(catalogue, elephant, effectSource('Spell Effect: Elephant Form')).key,
+    'elephant-form:default',
+  );
 
   // Pest Form's look is not a PF2e choice: the flag or the hint says which, the first form is the default.
   const [pest] = effectsOf('pest-form');
   const pestSource = effectSource('Spell Effect: Pest Form');
-  assert.equal(deriveForm(pest, pestSource).key, 'pest-form:rat');
-  assert.equal(deriveForm(pest, pestSource, 'pest-form:cat').key, 'pest-form:cat');
+  assert.equal(deriveForm(catalogue, pest, pestSource).key, 'pest-form:rat');
+  assert.equal(deriveForm(catalogue, pest, pestSource, 'pest-form:cat').key, 'pest-form:cat');
   pestSource.flags[MODULE_ID] = { form: 'pest-form:fox' };
-  assert.equal(deriveForm(pest, pestSource, 'pest-form:cat').key, 'pest-form:fox');
+  assert.equal(deriveForm(catalogue, pest, pestSource, 'pest-form:cat').key, 'pest-form:fox');
   // A flag from another effect is ignored.
   pestSource.flags[MODULE_ID] = { form: 'animal-form:bear' };
-  assert.equal(deriveForm(pest, pestSource).key, 'pest-form:rat');
+  assert.equal(deriveForm(catalogue, pest, pestSource).key, 'pest-form:rat');
 });
 
 test('size and movement depend on the cast rank', () => {
@@ -163,4 +166,12 @@ test('forms are gated by rank and by the feats their predicate asks for', () => 
   assert.ok(!isFormAvailable(formByKey('pest-form:raven'), { rank: 3 }));
   assert.ok(isFormAvailable(formByKey('pest-form:raven'), { rank: 4 }));
   assert.ok(isFormAvailable(formByKey('animal-form:bear'), { rank: 2 }));
+});
+
+test("the selection is read from the flag scope of the catalogue's system", () => {
+  const source = effectSource('Spell Effect: Animal Form');
+  source.flags.sf2e = { rulesSelections: { spellEffectAnimalForm: 'cat' } };
+  // Another system's flags are not this catalogue's.
+  assert.equal(deriveForm(catalogue, animal, source), null);
+  assert.equal(deriveForm({ ...catalogue, system: 'sf2e' }, animal, source).key, 'animal-form:cat');
 });

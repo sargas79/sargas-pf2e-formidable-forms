@@ -37,6 +37,8 @@ function isTrue(statement, domain) {
     case 'iff':
       return operand.every((s) => isTrue(s, domain)) || operand.every((s) => !isTrue(s, domain));
     case 'eq':
+      // As in the system (Predicate#testBinaryOp): two strings are compared with each other as written, and a
+      // number is looked up as the roll option "left:right".
       return typeof operand[1] === 'string' ? operand[0] === operand[1] : domain.has(`${operand[0]}:${operand[1]}`);
     case 'gt':
     case 'gte':

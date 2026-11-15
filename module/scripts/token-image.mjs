@@ -97,7 +97,7 @@ export function buildTokenImageRule({ image, ringSafe }, { animate = true, ringS
 export function planTokenImage(catalogue, source, env = {}) {
   const entry = findEffectEntry(catalogue, source);
   if (!entry) return null;
-  const form = deriveForm(entry, source, env.hints?.[entry.uuid]);
+  const form = deriveForm(catalogue, entry, source, env.hints?.[entry.uuid]);
   if (!form) return null;
 
   // A copy of an effect that already went through here carries our rule: resolve it again for this actor and

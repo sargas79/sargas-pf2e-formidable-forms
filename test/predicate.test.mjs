@@ -42,7 +42,19 @@ test('numeric comparisons read the value from a roll option', () => {
   assert.ok(!testPredicate([{ gte: ['parent:level', 5] }], []));
   // A longer option with the same stem is a different option.
   assert.ok(!testPredicate([{ gte: ['parent:level', 5] }], ['parent:level:9:extra']));
+});
+
+test('eq follows the system: a number is looked up as an option, two strings are compared as written', () => {
+  // src/module/system/predication.ts, Predicate#testBinaryOp:
+  //   typeof eq[1] === "string" ? eq[0] === eq[1] : domain.has(`${eq[0]}:${eq[1]}`)
+  const rank = (n) => [`parent:level:${n}`];
   assert.ok(testPredicate([{ eq: ['parent:level', 5] }], rank(5)));
+  assert.ok(!testPredicate([{ eq: ['parent:level', 5] }], rank(6)));
+  assert.ok(!testPredicate([{ eq: ['parent:level', 5] }], []));
+  // A string on the right is not looked up in the options: the two operands are compared with each other.
+  assert.ok(testPredicate([{ eq: ['fire', 'fire'] }], []));
+  assert.ok(!testPredicate([{ eq: ['item:damage:type', 'fire'] }], ['item:damage:type:fire']));
+  assert.ok(!testPredicate([{ eq: ['parent:level', '5'] }], rank(5)));
 });
 
 test("PF2e's own form predicates behave as in the system", () => {

@@ -112,12 +112,13 @@ export function formForSelection(entry, selection) {
  *  2. a hint from whoever is creating the effect,
  *  3. the ChoiceSet selection (effects applied by hand or granted by Untamed Form),
  *  4. the only, or first, form of an effect without a choice.
+ * @param {object} catalogue The form catalogue; its `system` is the flag scope the system writes selections to
  * @param {object} entry The effect's catalogue entry
  * @param {object} source The effect's source data
  * @param {string} [hint] A form key suggested by the caller
  * @returns {object | null} The catalogue form
  */
-export function deriveForm(entry, source, hint) {
+export function deriveForm(catalogue, entry, source, hint) {
   for (const key of [source.flags?.[MODULE_ID]?.form, hint]) {
     const form = entry.forms.find((f) => f.key === key);
     if (form) return form;
@@ -127,7 +128,7 @@ export function deriveForm(entry, source, hint) {
   const rules = source.system?.rules ?? [];
   const selection =
     rules[findChoiceSetIndex(rules, entry.choiceSet)]?.selection ??
-    source.flags?.pf2e?.rulesSelections?.[entry.choiceSet.flag];
+    source.flags?.[catalogue.system]?.rulesSelections?.[entry.choiceSet.flag];
   return formForSelection(entry, selection);
 }
 

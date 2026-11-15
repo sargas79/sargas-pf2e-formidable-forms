@@ -80,8 +80,11 @@ export async function applyForm(actor, choice, cast, { message, spell }) {
   );
   if (existing.length) await actor.deleteEmbeddedDocuments('Item', existing);
 
+  // Tell the token image hook which token cast the spell: its ring settings decide how the art is written.
+  const token = message.token?.uuid ?? null;
   for (const { sources, operation } of steps) {
-    await actor.createEmbeddedDocuments('Item', sources, operation);
+    const hints = { ...operation[MODULE_ID], token };
+    await actor.createEmbeddedDocuments('Item', sources, { ...operation, [MODULE_ID]: hints });
   }
 }
 

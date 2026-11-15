@@ -2,7 +2,15 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { ART_SOURCE } from '../module/scripts/art.mjs';
 import { MODULE_ID } from '../module/scripts/constants.mjs';
-import { RULE_SLUG, TRANSITION, buildTokenImageRule, planTokenImage } from '../module/scripts/token-image.mjs';
+import {
+  MIN_SUBJECT_SCALE,
+  RULE_SLUG,
+  TRANSITION,
+  buildTokenImageRule,
+  chooseToken,
+  planTokenImage,
+  ringSettingsOf,
+} from '../module/scripts/token-image.mjs';
 import { catalogue, effectSource, formByKey } from './helpers.mjs';
 
 const FLAG = `flags.${MODULE_ID}.form`;
@@ -163,4 +171,98 @@ test('separate-effect and object-choice forms resolve their own art', () => {
   const dragon = effectSource('Spell Effect: Dragon Form');
   dragon.system.rules[0].selection = structuredClone(formByKey('dragon-form:mirage').value);
   assert.equal(planTokenImage(catalogue, dragon, env).form.key, 'dragon-form:mirage');
+});
+
+/* -------------------------------------------- */
+/*  Dynamic ring settings                        */
+/* -------------------------------------------- */
+
+const RING_TOKEN = {
+  texture: { src: 'tokens/druid.webp' },
+  ring: {
+    enabled: true,
+    colors: { ring: '#ff0000', background: '#00ff00' },
+    effects: 5,
+    subject: { scale: 1.2, texture: 'tokens/druid-subject.webp' },
+  },
+};
+
+test('ring settings are read from token source data, with Foundry defaults for what is not set', () => {
+  assert.deepEqual(ringSettingsOf(RING_TOKEN), {
+    enabled: true,
+    colors: { ring: '#ff0000', background: '#00ff00' },
+    effects: 5,
+    subject: { scale: 1.2 },
+  });
+  const defaults = { enabled: false, colors: { ring: null, background: null }, effects: 1, subject: { scale: 1 } };
+  assert.deepEqual(ringSettingsOf({ texture: { src: 'a.webp' } }), defaults);
+  assert.deepEqual(ringSettingsOf({ ring: {} }), defaults);
+  assert.deepEqual(ringSettingsOf(undefined), defaults);
+  assert.deepEqual(ringSettingsOf(null), defaults);
+  // A ring with effects switched off (0) keeps them off.
+  assert.equal(ringSettingsOf({ ring: { enabled: true, effects: 0 } }).effects, 0);
+});
+
+test("the ring rule carries the token's colours, effects and subject scale, so only the picture changes", () => {
+  const rule = buildTokenImageRule({ image: 'a.webp', ringSafe: true }, { ringSettings: ringSettingsOf(RING_TOKEN) });
+  assert.deepEqual(rule.ring, {
+    subject: { texture: 'a.webp', scale: 1.2 },
+    colors: { ring: '#ff0000', background: '#00ff00' },
+    effects: 5,
+  });
+  assert.equal('value' in rule, false);
+  // The rule object does not share the settings object it was given.
+  const settings = ringSettingsOf(RING_TOKEN);
+  const built = buildTokenImageRule({ image: 'a.webp', ringSafe: true }, { ringSettings: settings });
+  built.ring.colors.ring = '#000000';
+  assert.equal(settings.colors.ring, '#ff0000');
+});
+
+test('a subject scale below what the rule accepts is raised to the minimum', () => {
+  const small = ringSettingsOf({ ring: { enabled: true, subject: { scale: 0.5 } } });
+  const rule = buildTokenImageRule({ image: 'a.webp', ringSafe: true }, { ringSettings: small });
+  assert.equal(rule.ring.subject.scale, MIN_SUBJECT_SCALE);
+  assert.equal(MIN_SUBJECT_SCALE, 0.8);
+});
+
+test('ring settings are ignored when the image replaces the token texture', () => {
+  const rule = buildTokenImageRule({ image: 'a.webp', ringSafe: false }, { ringSettings: ringSettingsOf(RING_TOKEN) });
+  assert.equal(rule.value, 'a.webp');
+  assert.equal('ring' in rule, false);
+});
+
+test("an effect created for a ring token keeps the token's ring settings", () => {
+  const ringSettings = ringSettingsOf(RING_TOKEN);
+  const plan = planTokenImage(catalogue, chosenBear(), { ...art, ring: ringSettings.enabled, ringSettings });
+  assert.deepEqual(plan.update['system.rules'].at(-1).ring, {
+    subject: { texture: 'modules/art/bear.webp', scale: 1.2 },
+    colors: { ring: '#ff0000', background: '#00ff00' },
+    effects: 5,
+  });
+  // A token without the ring never gets one, whatever settings it has stored.
+  const off = ringSettingsOf({ ring: { ...RING_TOKEN.ring, enabled: false } });
+  const plain = planTokenImage(catalogue, chosenBear(), { ...art, ring: off.enabled, ringSettings: off });
+  assert.equal('ring' in plain.update['system.rules'].at(-1), false);
+  assert.equal(plain.update['system.rules'].at(-1).value, 'modules/art/bear.webp');
+});
+
+test('the most specific token is chosen for an actor', () => {
+  const actorUuid = 'Actor.druid00000000000';
+  const caster = { id: 'caster', actor: { uuid: actorUuid } };
+  const own = { id: 'own' };
+  const active = [{ id: 'viewed-1' }, { id: 'viewed-2' }];
+  const prototype = { id: 'prototype' };
+
+  // The token that cast the spell wins, even over a token on the scene being viewed.
+  assert.equal(chooseToken({ actorUuid, preferred: caster, own: null, active, prototype }), caster);
+  // A token of another actor is not ours to read.
+  const stranger = { id: 'stranger', actor: { uuid: 'Actor.other0000000000' } };
+  assert.equal(chooseToken({ actorUuid, preferred: stranger, own: null, active, prototype }), active[0]);
+  assert.equal(chooseToken({ actorUuid, preferred: { id: 'no-actor' }, own, active, prototype }), own);
+  // Then the unlinked token's own document, a token on the viewed scene, and last the prototype.
+  assert.equal(chooseToken({ actorUuid, own, active, prototype }), own);
+  assert.equal(chooseToken({ actorUuid, active, prototype }), active[0]);
+  assert.equal(chooseToken({ actorUuid, active: [], prototype }), prototype);
+  assert.equal(chooseToken({ actorUuid, prototype }), prototype);
+  assert.equal(chooseToken({ actorUuid }), null);
 });

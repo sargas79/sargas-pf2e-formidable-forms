@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.zip
+
+# Sparse PF2e checkout used by the catalogue scripts
+scripts/.cache/

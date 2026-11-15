@@ -1,0 +1,75 @@
+<div class="sargas-forms-body">
+  <header class="sargas-forms-header">
+    {{#if canGoBack}}
+      <button type="button" class="sargas-forms-back" data-action="back">
+        <i class="fa-solid fa-arrow-left"></i>
+        {{localize "SARGAS_FORMS.Picker.Back"}}
+      </button>
+    {{/if}}
+    <h3 class="sargas-forms-prompt">{{prompt}}</h3>
+    <span class="sargas-forms-rank">{{rankLabel}}</span>
+    <input type="search" value="{{query}}" placeholder="{{searchPlaceholder}}" aria-label="{{searchPlaceholder}}" />
+  </header>
+
+  <div class="sargas-forms-scroll">
+    {{#if spells}}
+      <div class="sargas-forms-grid">
+        {{#each spells}}
+          <button
+            type="button"
+            class="sargas-forms-card"
+            data-action="chooseSpell"
+            data-slug="{{slug}}"
+            data-name="{{name}}"
+          >
+            <img src="{{img}}" alt="" loading="lazy" />
+            <span class="sargas-forms-name">{{name}}</span>
+            <span class="sargas-forms-detail">{{countLabel}}</span>
+          </button>
+        {{/each}}
+      </div>
+    {{/if}}
+
+    {{#each groups}}
+      <section class="sargas-forms-group">
+        {{#if label}}<h4>{{label}}</h4>{{/if}}
+        <div class="sargas-forms-grid">
+          {{#each cards}}
+            <button
+              type="button"
+              class="sargas-forms-card {{#if selected}}selected{{/if}}"
+              data-action="select"
+              data-key="{{key}}"
+              data-name="{{name}}"
+              aria-pressed="{{selected}}"
+            >
+              <img src="{{img}}" alt="" loading="lazy" />
+              <span class="sargas-forms-name">{{name}}</span>
+              <span class="sargas-forms-detail">
+                {{size}}
+                {{#each movement}}
+                  <i class="{{icon}}" data-tooltip="{{label}}" aria-label="{{label}}"></i>
+                {{/each}}
+              </span>
+            </button>
+          {{/each}}
+        </div>
+      </section>
+    {{/each}}
+
+    <p class="sargas-forms-empty" hidden>{{localize "SARGAS_FORMS.Picker.NoMatch"}}</p>
+  </div>
+
+  <footer class="sargas-forms-footer form-footer">
+    <button type="button" data-action="cancel">
+      <i class="fa-solid fa-xmark"></i>
+      {{localize "SARGAS_FORMS.Picker.Cancel"}}
+    </button>
+    {{#if groups}}
+      <button type="button" data-action="confirm" {{#unless hasSelection}}disabled{{/unless}}>
+        <i class="fa-solid fa-paw"></i>
+        {{localize "SARGAS_FORMS.Picker.Apply"}}
+      </button>
+    {{/if}}
+  </footer>
+</div>

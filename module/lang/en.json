@@ -1,0 +1,80 @@
+{
+  "SARGAS_FORMS": {
+    "Cosmetic": {
+      "Rat": "Rat",
+      "Cat": "Cat",
+      "Fox": "Fox",
+      "Frog": "Frog",
+      "Monkey": "Monkey",
+      "Snake": "Snake",
+      "Weasel": "Weasel",
+      "Raven": "Raven"
+    },
+    "Notify": {
+      "SizeNotLinked": "{name}'s token did not change size with the form because \"Link to actor size\" is turned off in its token settings.",
+      "NoForms": "{actor} has no form available for {spell}.",
+      "ApplyFailed": "The form for {spell} could not be applied. See the console (F12) for details."
+    },
+    "Settings": {
+      "AutoApply": {
+        "Name": "Apply battle forms on cast",
+        "Hint": "When a battle-form spell or Untamed Form is cast, ask the caster which form to take and apply its effect. Turn this off to apply effects by hand from the chat card; they still get the form's token art."
+      },
+      "Transition": {
+        "Name": "Fade to the form's image",
+        "Hint": "Fade the token to its new image when you apply a battle form. Read when the form is applied, on the computer of whoever applies it."
+      },
+      "FormArt": {
+        "Name": "Form art",
+        "Label": "Manage form art",
+        "Hint": "See which image each battle form shows on the token and where it comes from, and set your own."
+      }
+    },
+    "Picker": {
+      "Title": "Choose a form: {spell}",
+      "Rank": "Rank {rank}",
+      "Search": "Search forms",
+      "ChooseSpell": "Choose a kind of form",
+      "FormCount": "{count} forms",
+      "Back": "Back",
+      "NoMatch": "No form matches your search.",
+      "Cancel": "Cancel",
+      "Apply": "Transform"
+    },
+    "Group": {
+      "arcane": "Arcane dragons",
+      "divine": "Divine dragons",
+      "occult": "Occult dragons",
+      "primal": "Primal dragons",
+      "legacy": "Legacy forms (before the remaster)"
+    },
+    "Size": {
+      "own": "Your size",
+      "tiny": "Tiny",
+      "sm": "Small",
+      "med": "Medium",
+      "lg": "Large",
+      "huge": "Huge",
+      "grg": "Gargantuan"
+    },
+    "Movement": {
+      "burrow": "Burrow Speed",
+      "climb": "Climb Speed",
+      "fly": "Fly Speed",
+      "swim": "Swim Speed"
+    },
+    "Art": {
+      "Title": "Form art",
+      "Intro": "The image each form puts on the token. Images come from your art modules through Foundry's compendium art, or from the creature in the PF2e compendium. Set your own for any form; it is used the next time the form is applied.",
+      "Search": "Search forms or spells",
+      "Browse": "Choose an image",
+      "Reset": "Reset to the automatic image",
+      "Source": {
+        "override": "Your image",
+        "art-module": "Art module",
+        "compendium": "Compendium creature",
+        "none": "No image: the token keeps its own"
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<div class="sargas-forms-body">
+  <header class="sargas-forms-header">
+    <p class="sargas-forms-intro">{{intro}}</p>
+    <input type="search" value="{{query}}" placeholder="{{searchPlaceholder}}" aria-label="{{searchPlaceholder}}" />
+  </header>
+
+  <div class="sargas-forms-scroll">
+    {{#each spells}}
+      <section class="sargas-forms-group">
+        <h4>{{name}}</h4>
+        <ul class="sargas-forms-rows">
+          {{#each rows}}
+            <li class="sargas-forms-row" data-key="{{key}}" data-search="{{search}}" data-source="{{source}}">
+              <img src="{{img}}" alt="" loading="lazy" {{#unless hasImage}}class="placeholder"{{/unless}} />
+              <div class="sargas-forms-row-text">
+                <span class="sargas-forms-name">{{name}}</span>
+                <span class="sargas-forms-detail">
+                  {{sourceLabel}}{{#if creature}} · {{creature}}{{/if}}
+                </span>
+              </div>
+              <div class="sargas-forms-row-buttons">
+                <button
+                  type="button"
+                  data-action="browse"
+                  data-tooltip="{{localize 'SARGAS_FORMS.Art.Browse'}}"
+                  aria-label="{{localize 'SARGAS_FORMS.Art.Browse'}}"
+                >
+                  <i class="fa-solid fa-file-import"></i>
+                </button>
+                <button
+                  type="button"
+                  data-action="reset"
+                  data-tooltip="{{localize 'SARGAS_FORMS.Art.Reset'}}"
+                  aria-label="{{localize 'SARGAS_FORMS.Art.Reset'}}"
+                  {{#unless overridden}}disabled{{/unless}}
+                >
+                  <i class="fa-solid fa-rotate-left"></i>
+                </button>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </section>
+    {{/each}}
+  </div>
+</div>
